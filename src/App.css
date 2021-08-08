@@ -1,0 +1,31 @@
+.navbar-brand{
+    font-size: 20px !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    text-align: center !important;
+    color: #EB0090 !important;
+    margin: 10px !important;
+    justify-content: center !important;
+    margin-top:33px !important ;
+}
+h1{
+    font-size: 80px !important;
+}
+.btn-primary {
+    background:#EB0090 !important;
+    border-color: #FEC6E8 !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+body{
+    padding: 0!important;
+    
+}
+.navbar{
+    border-radius: 0 !important;
+    position: relative;
+}
+
+#home{
+    margin-left: 45% !important;
+}
