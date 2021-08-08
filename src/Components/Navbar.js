@@ -21,8 +21,8 @@ function Navbar() {
             <ReactBootStrap.Nav.Link href="#pricing" style={{margin:"10px", marginRight:"25px", color:"grey"}}>
               Contact
             </ReactBootStrap.Nav.Link>
-            <img style={{margin:"20px", width:"25px",height:"25px"}} src={logo} alt="Logo" />
-            <ReactBootStrap.Button variant="primary" style={{height:"40px!important", background:"white !important"}}>
+            <img style={{margin:"20px", width:"25px",height:"25px", background:"white" ,borderRadius:"50%"}} src={logo} alt="Logo" />
+            <ReactBootStrap.Button variant="primary" className="btnnav" style={{height:"40px!important", background:"white !important"}}>
               Get started
             </ReactBootStrap.Button>
           </ReactBootStrap.Nav>
