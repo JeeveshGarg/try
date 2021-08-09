@@ -1,5 +1,6 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
+
 import logo from './n.png';
 import "../App.css";
 function Navbar() {
@@ -13,12 +14,12 @@ function Navbar() {
           <ReactBootStrap.Nav className="me-auto" style={{marginRight:"326px"}}>
             <ReactBootStrap.Nav.Link href="#home"  id ="home"  style={{margin:"10px", marginRight:"25px", marginLeft:"55%", color:"grey"}}>Home</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#features" style={{margin:"10px", marginRight:"25px",  color:"grey"}}>
-              Features
+             Features
             </ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#pricing" style={{margin:"10px", marginRight:"25px", color:"grey"}}>
+            <ReactBootStrap.Nav.Link href="#Testimonial" style={{margin:"10px", marginRight:"25px", color:"grey"}}>
               Testimonials
             </ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#pricing" style={{margin:"10px", marginRight:"25px", color:"grey"}}>
+            <ReactBootStrap.Nav.Link href="#Contact" style={{margin:"10px", marginRight:"25px", color:"grey"}}>
               Contact
             </ReactBootStrap.Nav.Link>
             <img style={{margin:"20px", width:"25px",height:"25px", background:"white" ,borderRadius:"50%"}} src={logo} alt="Logo" />
