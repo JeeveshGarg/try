@@ -11,7 +11,7 @@ function Strip() {
     <ReactBootStrap.Col sm> <img  className="stripimg" src={logo} alt="Logo" /><h2 className="striph2">Lively Virtual Dates</h2>
     <p className="stripp">Fun exercises, activities, games, curb the awkwarness  pauses and be the driver.</p>
     </ReactBootStrap.Col>
-    <ReactBootStrap.Col sm> <img className="stripimg"  src={logoo} alt="Logo" /><h2 className="striph2">Quick Plug-in</h2>
+    <ReactBootStrap.Col sm> <img className="stripimg"  src={logoo} alt="Logo" style={{height:"120px"}} /><h2 className="striph2">Quick Plug-in</h2>
     <p className="stripp">No App download required, easy to plug in with your web browser.</p>
     </ReactBootStrap.Col>
     <ReactBootStrap.Col sm> <img className="stripimg"  src={logooo} alt="Logo" /><h2 className="striph2">100% Privacy</h2>

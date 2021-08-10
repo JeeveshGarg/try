@@ -55,7 +55,6 @@ function Footer() {
               <h3 style={{color:"grey", marginRight:"50px"}}>Home</h3>
               <h3 style={{color:"grey", marginRight:"50px"}}>Privacy Policy</h3>
               <h3 style={{color:"grey", marginLeft:"420px"}}>Copyright © 2018.</h3>
-              Copyright © 2018 • 
             </div>
         </ReactBootStrap.Container>
       </footer>
