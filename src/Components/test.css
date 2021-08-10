@@ -191,7 +191,20 @@ line-height: 18px;
 color: #FFFFFF;
 
 }
-
+.stripbtn{
+	text-decoration: none;
+	margin-top: 15px !important;
+	width: 211px;
+    height: 60px;
+    font-family: DM Sans !important;
+    font-style: normal;
+    font-weight: bold !important;
+    font-size: 17px !important;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #FFFFFF;
+}
 
 
 .section-title {

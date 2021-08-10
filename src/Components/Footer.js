@@ -31,18 +31,11 @@ function Footer() {
             <a className="foota"> <img src={logog} alt="Logo" /></a>
             </div> 
             <div style={{	position: "absolute",left: "55.1%", marginTop:"55px"}}>
-            <div className="add"><img src={logoh} alt="Logo" />345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</div>
-            <span className="foots"> <img src={logoi} alt="Logo" />(123) 456-7890</span>
-            <span className="foots" style={{marginLeft:"74px"}}><img style={{marginRight:"4px"}} src={logoj} alt="Logo"/>ishi@candidconnect.tech</span>
+            <div className="add"><img src={logoh} alt="Logo" />New Delhi, India</div>
+            <span className="foots"> <img src={logoi} alt="Logo" />(+91)7390071951</span>
+            <span className="foots" style={{marginLeft:"74px"}}><img style={{marginRight:"4px"}} src={logoj} alt="Logo"/>hi@candidconnect.tech</span>
 
             </div>
-
-
-
-
-
-
-
 
 
 
