@@ -145,5 +145,16 @@ jQuery(document).ready(function ($) {
 }); //end ready
 
      </script>
+
+
+<script>
+	 $( ".change" ).on("click", function() {
+		if( $( "body" ).hasClass( "dark" )) {
+			$( "body" ).removeClass( "dark" );
+		} else {
+			$( "body" ).addClass( "dark" );
+		}
+	});
+</script>
   </body>
 </html>

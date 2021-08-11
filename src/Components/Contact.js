@@ -12,7 +12,7 @@ but We would love to hear from you for any queries!</h2>
 <form style={{display:"inline-grid"}}>
     <input type="text" placeholder="Your Name" name="name" style={{margin:"20px", padding:"15px", border:"white",width:"91%"}}></input>
     <input type="email" placeholder="Your Email" name="email" style={{margin:"20px", padding:"15px", border:"white",width:"421px"}}></input>
-    <button className="btn btn-primary" style={{marginBottom:"40px", height:"68PX", width:"180px", marginLeft:"130.5px", fontSize:"20px", borderRadius:"10px"}}> SEND</button>
+    <button className="btn btn-primary footbtn"> SEND</button>
 </form>
 </div>
             </div>

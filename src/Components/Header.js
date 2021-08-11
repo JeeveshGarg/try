@@ -15,7 +15,7 @@ function Header() {
         </h1>
         <p  className="headp" style={{paddingTop:"15px"}}>Turn your online couple meeting of couples into a playful date.  Free of boredom, & awkward pauses with intriguing converations & fun engagement.</p>
         <a><ReactBootStrap.Button variant="primary"  className="navbtn">MAKE IT HAPPEN! </ReactBootStrap.Button> </a>
-        <img src={logoo} alt="Logo" style={{marginTop:"15px"}}/>
+        {/* <img src={logoo} alt="Logo" style={{marginTop:"15px"}}/> */}
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={7}>
     <img src={logo} alt="Logo" />

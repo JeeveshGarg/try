@@ -23,7 +23,7 @@ function Strip() {
   <ReactBootStrap.Row >
     <ReactBootStrap.Col sm={12}  style={{background:"#FEC6E8" ,color:"white", padding:"20px" , paddingLeft:"90px" ,fontSize:"80px !important" , marginTop:"15px"}}>
       <h1 style={{fontSize:"80px", fontWeight:"700"}}  className="striph">
-        It takes less time, than to make a coffee, to sign up!<br/>
+        It takes less time, than to make a coffee, to sign up!
     <ReactBootStrap.Button variant="primary" className="stripbtn">MAKE IT HAPPEN!</ReactBootStrap.Button></h1>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
