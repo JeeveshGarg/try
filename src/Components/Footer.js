@@ -30,10 +30,10 @@ function Footer() {
             <a className="foota"> <img src={logof} alt="Logo" /></a>
             <a className="foota"> <img src={logog} alt="Logo" /></a>
             </div> 
-            <div style={{	position: "absolute",left: "55.1%", marginTop:"55px"}}>
-            <div className="add"><img src={logoh} alt="Logo" />New Delhi, India</div>
-            <span className="foots"> <img src={logoi} alt="Logo" />(+91)7390071951</span>
-            <span className="foots" style={{marginLeft:"74px"}}><img style={{marginRight:"4px"}} src={logoj} alt="Logo"/>hi@candidconnect.tech</span>
+            <div  style={{	position: "absolute",left: "55.1%", marginTop:"55px"}}>
+            <div className="add"><img style={{marginRight:"5px"}} src={logoh} alt="Logo" /> New Delhi, India</div>
+            <span className="foots"> <img style={{marginRight:"8px"}} src={logoi} alt="Logo" />(+91)7390071951</span>
+            <span className="foots" style={{marginLeft:"74px"}}><img style={{marginRight:"5px"}} style={{marginRight:"8px", height:"15px"}} src={logoj} alt="Logo"/>hi@candidconnect.tech</span>
 
             </div>
 
