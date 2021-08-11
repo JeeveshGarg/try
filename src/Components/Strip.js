@@ -6,16 +6,16 @@ import logooo from './s3.png';
 function Strip() {
     return (
         <div>
-            <ReactBootStrap.Container>
-            <ReactBootStrap.Row>
+            <ReactBootStrap.Container style={{marginBottom:"56px"}}>
+            <ReactBootStrap.Row >
     <ReactBootStrap.Col sm> <img  className="stripimg" src={logo} alt="Logo" /><h2 className="striph2">Lively Virtual Dates</h2>
-    <p className="stripp">Fun exercises, activities, games, curb the awkwarness  pauses and be the driver.</p>
+    <p className="stripp" style={{ width:"400px"}}>Fun exercises, activities, games, curb the awkwarness  pauses and be the driver.</p>
     </ReactBootStrap.Col>
     <ReactBootStrap.Col sm> <img className="stripimg"  src={logoo} alt="Logo" style={{height:"120px"}} /><h2 className="striph2">Quick Plug-in</h2>
-    <p className="stripp">No App download required, easy to plug in with your web browser.</p>
+    <p className="stripp" style={{ width:"400px"}}>No App download required, easy to plug in with your web browser.</p>
     </ReactBootStrap.Col>
     <ReactBootStrap.Col sm> <img className="stripimg"  src={logooo} alt="Logo" /><h2 className="striph2">100% Privacy</h2>
-    <p className="stripp">We value your intimacy, conversations are limited to the couples in the meet.</p>
+    <p className="stripp" style={{ width:"400px"}}>We value your intimacy, conversations are limited to the couples in the meet.</p>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
   </ReactBootStrap.Container>

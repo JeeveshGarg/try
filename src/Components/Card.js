@@ -16,7 +16,7 @@ function Card() {
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>  <h1  style={{fontWeight:"700"}} className="cardsh">Fun interaction games</h1>
        
        <p className="cardp" style={{paddingTop:"15px"}}>Rapid fires, plenty of romantic  games that can help bring you and your partner closer together or at least make for an interesting date night.</p>
-       <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Learn more</a>
+       <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
    
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
@@ -27,8 +27,8 @@ function Card() {
   <ReactBootStrap.Row>
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>    <h1  style={{fontWeight:"700"}} className="cardsh">In-depth conversations</h1>
       
-      <p className="cardp" style={{paddingTop:"15px"}}>No awkward pauses, intriguing communication with on-demand hints and suggestions. fun ways to learn more about each other. </p>
-      <a href= "#" style={{textDecoration:"none", color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Learn more</a>
+      <p className="cardp" style={{paddingTop:"15px"}}>No awkward pauses, intriguing communication with on-demand hints and suggestions. fun ways to Explore about each other. </p>
+      <a href= "#" style={{textDecoration:"none", color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
     
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={7}  style={{ display: "flex", justifyContent: "center", alignItems:"center"}} >
@@ -45,7 +45,7 @@ function Card() {
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}> <h1 style={{fontWeight:"700"}} className="cardsh">Myra, your cupid ;)</h1>
     <p  className="cardp" style={{paddingTop:"15px"}}>Your personal cupid, on whenever you or your partner feel bored, with magic tools hellp you build connection and increase fondness for one another.</p>
-    <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Learn more</a>
+    <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
 </ReactBootStrap.Container>
