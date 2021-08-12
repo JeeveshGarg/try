@@ -6,7 +6,7 @@ import "../App.css";
 function Header() {
 
     return (
-        <div>
+        <div  >
             <ReactBootStrap.Container>
   <ReactBootStrap.Row>
     <ReactBootStrap.Col xs={5}>

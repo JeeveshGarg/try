@@ -5,7 +5,7 @@ import logoo from './s2.png';
 import logooo from './s3.png';
 function Strip() {
     return (
-        <div>
+        <div  id="Card">
             <ReactBootStrap.Container style={{marginBottom:"56px"}}>
             <ReactBootStrap.Row >
     <ReactBootStrap.Col sm> <img  className="stripimg" src={logo} alt="Logo" /><h2 className="striph2">Lively Virtual Dates</h2>
