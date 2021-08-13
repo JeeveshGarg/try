@@ -3,7 +3,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import logo from './s1.png';
 import logoo from './s2.png';
 import logooo from './s3.png';
-function Strip() {
+function Strip({popup}) {
     return (
         <div  id="Card">
             <ReactBootStrap.Container style={{marginBottom:"56px"}}>
@@ -24,7 +24,7 @@ function Strip() {
     <ReactBootStrap.Col sm={12}  style={{background:"#FEC6E8" ,color:"white", padding:"20px" , paddingLeft:"90px" ,fontSize:"80px !important" , marginTop:"15px"}}>
       <h1 style={{fontSize:"80px", fontWeight:"700"}}  className="striph">
         It takes less time, than to make a coffee, to sign up!
-    <ReactBootStrap.Button variant="primary" className="stripbtn">MAKE IT HAPPEN!</ReactBootStrap.Button></h1>
+    <ReactBootStrap.Button variant="primary" className="stripbtn" onClick={() => popup(true)}>MAKE IT HAPPEN!</ReactBootStrap.Button></h1>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
   

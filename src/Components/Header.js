@@ -3,7 +3,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import logo from './m.png';
 import logoo from './m2.png';
 import "../App.css";
-function Header() {
+function Header({popup}) {
 
     return (
         <div  >
@@ -14,7 +14,7 @@ function Header() {
         <h1 style={{fontWeight:"700"}} className="headh"> online <span style={{color:"#EB0090"}}>date.</span>
         </h1>
         <p  className="headp" style={{paddingTop:"15px"}}>Turn your online couple meeting of couples into a playful date.  Free of boredom, & awkward pauses with intriguing converations & fun engagement.</p>
-        <a><ReactBootStrap.Button variant="primary"  className="navbtn">MAKE IT HAPPEN! </ReactBootStrap.Button> </a>
+        <a><ReactBootStrap.Button variant="primary"  className="navbtn" onClick={() => popup(true)}>MAKE IT HAPPEN! </ReactBootStrap.Button> </a>
         {/* <img src={logoo} alt="Logo" style={{marginTop:"15px"}}/> */}
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={7}>
