@@ -205,15 +205,23 @@ mix-blend-mode: normal;
 opacity: 0.7;
 	margin-top: 150px !important;
 	position: absolute;
-left: 55.1%;
-
-
+left: 55.9%;
 }
+
+
+
+
+
+
+
+
+
+
 .foota{
 	margin-left: 15px;
 }
 .add{
-font-family: Assistant;
+/* font-family: Assistant; */
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -225,7 +233,7 @@ mix-blend-mode: normal;
 opacity: 0.7;
 }
 .foots{
-font-family: Assistant;
+/* font-family: Assistant; */
 font-style: normal;
 font-weight: normal;
 font-size: 14px;

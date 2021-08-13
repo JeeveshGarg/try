@@ -1,10 +1,11 @@
 import React from 'react'
 import './test.css';
-
+import logo from './as.jpeg';
+import logoo from './ss.jpeg';
 function Testimonial() {
     
     return (
-        <div  id="Testimonial">
+        <div  id="Testimonial" >
              <section>
         <div className="customer-feedback">
           <div className="container text-center">
@@ -20,9 +21,9 @@ function Testimonial() {
                 <div className="owl-carousel feedback-slider">
                   {/* slider item */}
                   <div className="feedback-slider-item">
-                    <img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" className="center-block img-circle" alt="Customer Feedback" />
-                    <h3 className="customer-name  arefont">Lisa Redfern</h3>
-                    <p className="arefont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                    <img src={logoo} className="center-block img-circle" alt="Customer Feedback" />
+                    <h3 className="customer-name  arefont">Swapnil, Kolkata</h3>
+                    <p className="arefont">Candid Connection is a revolutionary idea with unlimited scope of growth. I believe it is going to change the world of online dating and make it more realistic.</p>
                     {/* <span className="light-bg customer-rating" data-rating={5}> */}
                       
                       {/* <i className="fa fa-star" /> */}
@@ -31,9 +32,10 @@ function Testimonial() {
                   {/* /slider item */}
                   {/* slider item */}
                   <div className="feedback-slider-item">
-                    <img src="https://res.cloudinary.com/hnmqik4yn/image/upload/c_fill,fl_force_strip,h_128,q_100,w_128/v1493982718/ah57hnfnwxkmsciwivve.jpg" className="center-block img-circle" alt="Customer Feedback" />
-                    <h3 className="customer-name arefont">Cassi</h3>
-                    <p className="arefont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                    <img src={logo} className="center-block img-circle" alt="Customer Feedback" />
+                    <h3 className="customer-name arefont">Riya, Delhi</h3>
+                    <p className="arefont">Making dating a little fun and filling energy is a wholesome idea.
+And it's even great for long distance relationships.</p>
                     {/* <span className="light-bg customer-rating" data-rating={4}> */}
                       
                       {/* <i className="fa fa-star" /> */}
