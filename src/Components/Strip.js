@@ -7,8 +7,9 @@ import Form from "../Components/Form";
 import { useState} from "react";
 
 function Strip() {
-  
-const [ change , setChange] = useState(false);
+
+const[popup ,setpopup] = useState(false)
+// const [ change , setChange] = useState(false);
 
     return (
         <div  id="Card">
@@ -32,13 +33,16 @@ const [ change , setChange] = useState(false);
       <h1 style={{fontSize:"80px", fontWeight:"700"}}  className="striph">
         It takes less time, than to make a coffee, to sign up!
     <ReactBootStrap.Button variant="primary" className="stripbtn" 
-    onClick={() => setChange(!change)}>MAKE IT HAPPEN!</ReactBootStrap.Button>
+    onClick={() => setpopup(true)}>MAKE IT HAPPEN!</ReactBootStrap.Button>
    </h1> 
    {/* {change && <button className="formbtn3" onClick={() => setChange(false)}>X</button>} */}
     </ReactBootStrap.Container>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
-  {change && <div style={{position:"absolute", left:"10%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"137%", boxShadow:"0 12px 15px #ccc"}}><Form></Form></div>}
+  <Form trigger={popup} setTrigger={setpopup}>
+<iframe style={{width:"600px", height:"500px"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6"/>
+</Form>
+  {/* {change && <div style={{position:"absolute", left:"10%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"137%", boxShadow:"0 12px 15px #ccc"}}><Form></Form></div>} */}
 
         </div>
     )

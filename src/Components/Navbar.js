@@ -7,8 +7,8 @@ import "../App.css";
 import { useState} from "react";
 function Navbar() {
 
-
-  const [ change , setChange] = useState(false);
+  const[popup ,setpopup] = useState(false)
+  // const [ change , setChange] = useState(false);
 
 
      
@@ -30,7 +30,7 @@ function Navbar() {
       <ReactBootStrap.Nav.Link href="#Contact" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Contact</ReactBootStrap.Nav.Link>
       <button onclick="myFunction()" style={{borderRadius:"50%" , height:"50px", width:"50px", display: "contents"}}><img   style={{margin:"20px", width:"25px",height:"25px", background:"white" ,borderRadius:"50%"}} src={logo} alt="Logo"/></button>
       <ReactBootStrap.Button variant="primary" className="btnnav" 
-      style={{height:"40px!important", background:"white !important"}} onClick={() => setChange(!change)}>
+      style={{height:"40px!important", background:"white !important"}} onClick={() => setpopup(true)}>
               Get started
       </ReactBootStrap.Button>
       {/* {change && <button className="formbtn1" onClick={() => setChange(false)}>X</button>} */}
@@ -38,7 +38,11 @@ function Navbar() {
     </ReactBootStrap.Nav>
   </ReactBootStrap.Navbar.Collapse>
   </ReactBootStrap.Container>
-</ReactBootStrap.Navbar>{change && <div style={ { position:"absolute", left:"30%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"17%", boxShadow:"0 12px 15px #ccc" }}><Form></Form></div>}
+</ReactBootStrap.Navbar> 
+<Form trigger={popup} setTrigger={setpopup}>
+<iframe style={{width:"600px", height:"500px"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6"/>
+</Form>
+{/* {change && <div style={ { position:"absolute", left:"30%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"17%", boxShadow:"0 12px 15px #ccc" }}><Form></Form></div>} */}
 
     </div>
     

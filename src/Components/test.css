@@ -9,6 +9,38 @@ img {
 	max-width: 100%;
 }
 
+.popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #FEC6E8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup-inner{
+	position: relative;
+	padding: 32px;
+	width: 100%;
+	border-radius: 10px;
+	max-width: 640px;
+	background-color: #FEC6E8;
+}
+.popup-inner .close-btn{
+	position: absolute;
+	top:16px;
+	right: 16px;
+	background: #EB0090;
+	color: #f6f6f6;
+	font-weight: 800;
+	font-size: 20PX;
+	width: 30PX;
+	border: none;
+	border-radius: 5PX;
+}
+
 body {
 	font-family: "Roboto Slab", serif;
 	font-size: 20px !important;
@@ -17,7 +49,7 @@ body {
 	padding-top: 5px ;
 }
 .cardsh{
-	
+
 font-family: DM Sans;
 font-style: normal;
 font-weight: bold;
@@ -32,7 +64,7 @@ color: #19191B;
 .headh{line-height: 77px;
 	letter-spacing: -2.50105px;
 	color: #19191B;
-	
+
 }
 
 
@@ -232,12 +264,12 @@ top: 21px;
 }
 
 .footbtn{
-	margin-bottom:40px; 
+	margin-bottom:40px;
 	height:68PX;
-	width:180px; 
+	width:180px;
 	margin-left:130.5px;
 	font-size:20px;
-	border-radius:10px; 
+	border-radius:10px;
 	background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%) !important;
 
 }
@@ -356,7 +388,7 @@ color: #696871;
 	left: 0;
 	right: auto;
 } */
-/* 
+/*
 .thumb-next .customer-rating {
 	top: -20px;
 	right: 0;
@@ -493,5 +525,3 @@ color: #696871;
 		right: 0;
 	}
 }
-
-
