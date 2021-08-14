@@ -4,7 +4,12 @@ import logo from './c1.png';
 import logoo from './c2.png';
 import logooo from './c3.png';
 import "../App.css";
+import Form from "../Components/Form";
+import { useState} from "react";
 function Card() {
+
+  const[popup ,setpopup] = useState(false)
+
     return (
         
                     <div>
@@ -16,7 +21,7 @@ function Card() {
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>  <h1  style={{fontWeight:"700"}} className="cardsh">Fun interaction games</h1>
        
        <p className="cardp" style={{paddingTop:"15px"}}>Rapid fires, plenty of romantic  games that can help bring you and your partner closer together or at least make for an interesting date night.</p>
-       <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
+       <a style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}} onClick={() => setpopup(true)}>Explore</a>
    
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
@@ -28,7 +33,7 @@ function Card() {
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>    <h1  style={{fontWeight:"700"}} className="cardsh">In-depth conversations</h1>
       
       <p className="cardp" style={{paddingTop:"15px"}}>No awkward pauses, intriguing communication with on-demand hints and suggestions. fun ways to Explore about each other. </p>
-      <a href= "#" style={{textDecoration:"none", color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
+      <a  style={{textDecoration:"none", color:"#EB0090", fontWeight:"700", fontSize:"17px" }} onClick={() => setpopup(true)}>Explore</a>
     
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={7}  style={{ display: "flex", justifyContent: "center", alignItems:"center"}} >
@@ -45,10 +50,13 @@ function Card() {
     </ReactBootStrap.Col>
     <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}> <h1 style={{fontWeight:"700"}} className="cardsh">Myra, your cupid ;)</h1>
     <p  className="cardp" style={{paddingTop:"15px"}}>Your personal cupid, on whenever you or your partner feel bored, with magic tools hellp you build connection and increase fondness for one another.</p>
-    <a  href= "#" style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}}>Explore</a>
+    <a   style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}} onClick={() => setpopup(true)}>Explore</a>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
 </ReactBootStrap.Container>
+<Form trigger={popup} setTrigger={setpopup}>
+<iframe style={{width:"600px", height:"500px"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6"/>
+</Form>
         </div>
       
     )
