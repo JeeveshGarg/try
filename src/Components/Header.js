@@ -19,7 +19,7 @@ function Header() {
         <h1 style={{fontWeight:"700"}} className="headh">Lit up your</h1>
         <h1 style={{fontWeight:"700"}} className="headh"> online <span style={{color:"#EB0090"}}>date.</span>
         </h1>
-        <p  className="headp" style={{paddingTop:"15px"}}>Turn your online couple meeting of couples into a playful date.  Free of boredom, & awkward pauses with intriguing converations & fun engagement.</p>
+        <p  className="headp" style={{paddingTop:"15px"}}>Turn your online couple meeting into a playful date.  Free of boredom, & awkward pauses with intriguing converations & fun engagement.</p>
        <ReactBootStrap.Button variant="primary"
          className="navbtn" onClick={() => setpopup(true)}>MAKE IT HAPPEN! </ReactBootStrap.Button>
 
