@@ -3,7 +3,13 @@ import * as ReactBootStrap from "react-bootstrap";
 import logo from './s1.png';
 import logoo from './s2.png';
 import logooo from './s3.png';
-function Strip({popup}) {
+import Form from "../Components/Form";
+import { useState} from "react";
+
+function Strip() {
+  
+const [ change , setChange] = useState(false);
+
     return (
         <div  id="Card">
             <ReactBootStrap.Container style={{marginBottom:"56px"}}>
@@ -25,11 +31,14 @@ function Strip({popup}) {
        <ReactBootStrap.Container style={{padding:"0"}}>
       <h1 style={{fontSize:"80px", fontWeight:"700"}}  className="striph">
         It takes less time, than to make a coffee, to sign up!
-    <ReactBootStrap.Button variant="primary" className="stripbtn" onClick={() => popup(true)}>MAKE IT HAPPEN!</ReactBootStrap.Button></h1>
+    <ReactBootStrap.Button variant="primary" className="stripbtn" 
+    onClick={() => setChange(!change)}>MAKE IT HAPPEN!</ReactBootStrap.Button>
+   </h1> 
+   {/* {change && <button className="formbtn3" onClick={() => setChange(false)}>X</button>} */}
     </ReactBootStrap.Container>
     </ReactBootStrap.Col>
   </ReactBootStrap.Row>
-  
+  {change && <div style={{position:"absolute", left:"10%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"137%", boxShadow:"0 12px 15px #ccc"}}><Form></Form></div>}
 
         </div>
     )

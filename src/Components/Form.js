@@ -1,12 +1,12 @@
 import React from "react";
 
-function Form ({popup}) {
+function Form () {
 return(
 <div className="container">
-<div className="form">
+<div>
     
-<iframe style={{width:"600px", height:"500px", boxSizing:"border-box"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6" >
-   </iframe><button className="formbtn" onClick={() => popup(false)}>Back</button>
+<iframe style={{width:"600px", height:"550px", boxSizing:"border-box", alignSelf:"center"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6" >
+   </iframe>
 </div>
 </div>
 )
