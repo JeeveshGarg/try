@@ -1,8 +1,8 @@
 import React from 'react'
 import './test.css';
-import logo from './as.jpeg';
-import logoo from './ss.jpeg';
-import logop from './ps.jpeg';
+import logo from './as.png';
+import logoo from './ss.png';
+import logop from './ps.png';
 function Testimonial() {
     
     return (
@@ -49,7 +49,7 @@ And it's even great for long distance relationships.</p>
                 <div className="feedback-slider-thumb hidden-xs">
                   <div className="thumb-prev">
                     <span>
-                      <img src={logoo} alt="Customer Feedback" />
+                      <img src={logo} alt="Customer Feedback" />
                     </span>
                     
                   </div> 
