@@ -2,6 +2,7 @@ import React from 'react'
 import './test.css';
 import logo from './as.jpeg';
 import logoo from './ss.jpeg';
+import logop from './ps.jpeg';
 function Testimonial() {
     
     return (
@@ -21,7 +22,7 @@ function Testimonial() {
                 <div className="owl-carousel feedback-slider">
                   {/* slider item */}
                   <div className="feedback-slider-item">
-                    <img src={logoo} className="center-block img-circle" alt="Customer Feedback" />
+                    <img src={logoo} style={{zIndex:"-1"}} className="center-block img-circle" alt="Customer Feedback" />
                     <h3 className="customer-name  arefont">Swapnil, Kolkata</h3>
                     <p className="arefont">Candid Connection is a revolutionary idea with unlimited scope of growth. I believe it is going to change the world of online dating and make it more realistic.</p>
                     {/* <span className="light-bg customer-rating" data-rating={5}> */}
@@ -32,7 +33,7 @@ function Testimonial() {
                   {/* /slider item */}
                   {/* slider item */}
                   <div className="feedback-slider-item">
-                    <img src={logo} className="center-block img-circle" alt="Customer Feedback" />
+                    <img src={logo} style={{zIndex:"-1"}} className="center-block img-circle" alt="Customer Feedback" />
                     <h3 className="customer-name arefont">Riya, Delhi</h3>
                     <p className="arefont">Making dating a little fun and filling energy is a wholesome idea.
 And it's even great for long distance relationships.</p>
@@ -44,9 +45,9 @@ And it's even great for long distance relationships.</p>
                   {/* /slider item */}
                   {/* slider item */}
                   <div className="feedback-slider-item">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" className="center-block img-circle" alt="Customer Feedback" />
-                    <h3 className="customer-name arefont">Md Nahidul</h3>
-                    <p className="arefont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                    <img style={{zIndex:"-1"}} src={logop} className="center-block img-circle" alt="Customer Feedback" />
+                    <h3 className="customer-name arefont">Subham, Mumbai</h3>
+                    <p className="arefont">Awkward pauses are a big problem while dating. Candid connection is making life easier.</p>
                     {/* <span className="light-bg customer-rating" data-rating={5}> */}
                       
                       {/* <i className="fa fa-star" /> */}

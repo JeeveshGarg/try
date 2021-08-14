@@ -26,8 +26,8 @@ function Navbar() {
     <ReactBootStrap.Nav targetOffset="65px">
       <ReactBootStrap.Nav.Link href="#Home" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Home</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link href="#Card" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Features</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#Testimonial" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Testimonials</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#Contact" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Contact</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="#Testimonial" style={{margin:"10px", marginRight:"25px", color:"grey"}}>What People Say</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="#Contact" style={{margin:"10px", marginRight:"25px", color:"grey"}}>Contact Us</ReactBootStrap.Nav.Link>
       <button onclick="myFunction()" style={{borderRadius:"50%" , height:"50px", width:"50px", display: "contents"}}><img   style={{margin:"20px", width:"25px",height:"25px", background:"white" ,borderRadius:"50%"}} src={logo} alt="Logo"/></button>
       <ReactBootStrap.Button variant="primary" className="btnnav" 
       style={{height:"40px!important", background:"white !important"}} onClick={() => setpopup(true)}>
