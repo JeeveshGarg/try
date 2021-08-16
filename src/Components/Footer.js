@@ -45,7 +45,7 @@ function Footer() {
             <hr style={{color:"white", clear:"both"}} />
            
             <div style={{display:"flex",marginBottom:"30px" }}>
-              <ReactBootStrap.Nav.Link href="# Card" style={{color:"grey", marginRight:"50px"}}>Features</ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link href="#Card" style={{color:"grey", marginRight:"50px"}}>Features</ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="#Contact" style={{color:"grey", marginRight:"50px"}}>Contact Us</ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="#Home" style={{color:"grey", marginRight:"50px"}}>Home</ReactBootStrap.Nav.Link>
               {/* <h3 style={{color:"grey", marginRight:"50px"}}>Privacy Policy</h3> */}
