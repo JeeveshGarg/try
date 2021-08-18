@@ -34,7 +34,7 @@ function Header() {
               MAKE IT HAPPEN!{" "}
             </ReactBootStrap.Button> */}
             {/* <button data-tf-popup="AdHfxkOD" className="navbtn" >MAKE IT HAPPEN!</button> */}
-            <Button ></Button>
+            <Button> MAKE IT HAPPEN!</Button>
           </ReactBootStrap.Col>
 
           <ReactBootStrap.Col xs={7}>

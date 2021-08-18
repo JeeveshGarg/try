@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({children}) => {
     return (
         <div>
-            <button data-tf-popup="AdHfxkOD"  className="navbtn">MAKE IT HAPPEN!</button>
+            <button data-tf-popup="AdHfxkOD" className="btnnav">{children}</button>
         </div>
     )
 }

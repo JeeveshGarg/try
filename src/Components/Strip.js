@@ -32,13 +32,13 @@ const[popup ,setpopup] = useState(false)
     <ReactBootStrap.Col sm={12}  style={{background:"#FEC6E8" ,color:"white", padding:"20px" , paddingLeft:"90px" ,fontSize:"80px !important" , marginTop:"15px"}}>
        <ReactBootStrap.Container style={{padding:"0"}}>
       <h1 style={{fontSize:"80px", fontWeight:"700"}}  className="striph">
-        It takes less time, than to make a coffee, to sign up!<Button ></Button>
+        It takes less time, than to make a coffee, to sign up!
     {/* <ReactBootStrap.Button variant="primary" className="stripbtn" 
     onClick={() => setpopup(true)}>MAKE IT HAPPEN!</ReactBootStrap.Button> */}
     {/* <button data-tf-popup="Khdhjssf" className="navbtn" >MAKE IT HAPPEN!</button> 
     */}
     
-   </h1> 
+   </h1> <Button>Sign Up</Button>
    {/* {change && <button className="formbtn3" onClick={() => setChange(false)}>X</button>} */}
     </ReactBootStrap.Container>
     </ReactBootStrap.Col>
