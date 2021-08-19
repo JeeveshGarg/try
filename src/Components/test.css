@@ -98,7 +98,7 @@ h1{
 h2{
 	font-size: 25px !important;
 }
-.btn{
+/* .btn{
 border: none !important;
 padding: 10px !important;
 border-radius: 10px !important;
@@ -109,26 +109,8 @@ font-size: 17px !important;
 text-align: center;
 letter-spacing: -0.531474px;
 color: #FFFFFF;
-}
-.btnnav{
-all:unset;
-font-family:Helvetica,Arial,sans-serif;
-display:inline-block;
-max-width:100%;
-white-space:nowrap;
-overflow:hidden;
-text-overflow:ellipsis;
-background-color:#FF0290;
-font-size:17px;
-border-radius:10px;
-color:#fff;padding:0 33px;
-font-weight:bold;
-height: 60px;
-cursor:pointer;
-line-height:50px;
-text-align:center;
-margin:0;
-text-decoration:none;
+} */
+/* .btnnav{
 /* width: 171px;
 height: 50px;
 border: none !important;
@@ -142,8 +124,8 @@ letter-spacing: -0.531474px;
 margin-top:6px ;
 color: #FFFFFF; */
 
-}
-
+/* } */
+/* 
 .navbtn{
 all:unset;
 font-family:Helvetica,Arial,sans-serif;
@@ -164,7 +146,7 @@ text-align:center;
 margin:0;
 text-decoration:none;
 margin-top: 15px !important;
-}
+} */
 .stripimg{
     position: relative;
 	margin-left: 50%;
@@ -279,7 +261,7 @@ top: 21px;
 	background-color: #222;
 	color: #e6e6e6;
 }
-
+/* 
 .footbtn{
 	margin-bottom:40px;
 	height:68PX;
@@ -289,27 +271,15 @@ top: 21px;
 	border-radius:10px;
 	background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%) !important;
 
-}
+} */
 
 
 
 
-.stripbtn{
-	text-decoration: none;
-	margin-top: 15px !important;
-	width: 211px;
-    height: 60px;
-    font-family: DM Sans !important;
-    font-style: normal;
-    font-weight: bold !important;
-    font-size: 17px !important;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: -0.531474px;
-    color: #FFFFFF;
+/* .stripbtn{
 	margin-left: 45px;
-	margin-top: 0 !important;
-}
+	margin-top: 0 
+} */
 
 
 .section-title {

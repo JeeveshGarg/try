@@ -10,8 +10,8 @@ function Header() {
   // const [ change , setChange] = useState(false);
 
   return (
-    <div >
-      <ReactBootStrap.Container >
+    <div>
+      <ReactBootStrap.Container>
         <ReactBootStrap.Row>
           <ReactBootStrap.Col xs={5}>
             <h1 style={{ fontWeight: "700" }} className="headh">
@@ -34,7 +34,7 @@ function Header() {
               MAKE IT HAPPEN!{" "}
             </ReactBootStrap.Button> */}
             {/* <button data-tf-popup="AdHfxkOD" className="navbtn" >MAKE IT HAPPEN!</button> */}
-            <Button> MAKE IT HAPPEN!</Button>
+            <Button primary> MAKE IT HAPPEN!</Button>
           </ReactBootStrap.Col>
 
           <ReactBootStrap.Col xs={7}>

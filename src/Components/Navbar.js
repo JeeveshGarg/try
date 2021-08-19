@@ -50,7 +50,6 @@ function Navbar() {
                 Contact Us
               </ReactBootStrap.Nav.Link>
               <button
-                
                 style={{
                   borderRadius: "50%",
                   height: "50px",
@@ -83,7 +82,7 @@ function Navbar() {
               </ReactBootStrap.Button> */}
               {/* <button data-tf-popup="AdHfxkOD" className="btnnav">Get started</button>
                */}
-               <Button>MAKE IT HAPPEN!</Button>
+              <Button>Get Started</Button>
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Container>
