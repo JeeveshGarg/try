@@ -1,65 +1,73 @@
-import React from 'react'
+import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
-import logo from './c1.png';
-import logoo from './c2.png';
-import logooo from './c3.png';
+import logo from "./c1.png";
+import logoo from "./c2.png";
+import logooo from "./c3.png";
 import "../App.css";
-import Form from "../Components/Form";
-import { useState} from "react";
+import { useState } from "react";
 function Card() {
+  const [popup, setpopup] = useState(false);
 
-  const[popup ,setpopup] = useState(false)
+  return (
+    <div>
+      <ReactBootStrap.Container className="card__wrap">
+        <ReactBootStrap.Row className="card__one">
+          <ReactBootStrap.Col className="one__image">
+          <div className="cardimg"><img className="cardimg" src={logo} alt="Logo" /></div>
+          </ReactBootStrap.Col>
+          <ReactBootStrap.Col className="one__text">
+            {" "}
+            <h1 className="cardsh">
+              Fun interaction games
+            </h1>
+            <p className="cardp" >
+              Rapid fires, plenty of romantic games that can help bring you and
+              your partner closer together or at least make for an interesting
+              date night.
+            </p>
+            <div className="link"><a > Explore</a></div>
+          </ReactBootStrap.Col>
+        </ReactBootStrap.Row>
 
-    return (
-        
-                    <div>
-            <ReactBootStrap.Container>
-  <ReactBootStrap.Row>
-    <ReactBootStrap.Col xs={7} style={{ display: "flex", justifyContent: "center", alignItems:"center"}}>
-    <img  src={logo} alt="Logo" />
-    </ReactBootStrap.Col>
-    <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>  <h1  style={{fontWeight:"700"}} className="cardsh">Fun interaction games</h1>
-       
-       <p className="cardp" style={{paddingTop:"15px"}}>Rapid fires, plenty of romantic  games that can help bring you and your partner closer together or at least make for an interesting date night.</p>
-       <a style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}} onClick={() => setpopup(true)}>Explore</a>
-   
-    </ReactBootStrap.Col>
-  </ReactBootStrap.Row>
-  <br/>
-<br/>
-<br/>
-<br/>
-  <ReactBootStrap.Row>
-    <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}>    <h1  style={{fontWeight:"700"}} className="cardsh">In-depth conversations</h1>
-      
-      <p className="cardp" style={{paddingTop:"15px"}}>No awkward pauses, intriguing communication with on-demand hints and suggestions. fun ways to Explore about each other. </p>
-      <a  style={{textDecoration:"none", color:"#EB0090", fontWeight:"700", fontSize:"17px" }} onClick={() => setpopup(true)}>Explore</a>
-    
-    </ReactBootStrap.Col>
-    <ReactBootStrap.Col xs={7}  style={{ display: "flex", justifyContent: "center", alignItems:"center"}} >
-    <img src={logoo}  alt="Logo" />
-    </ReactBootStrap.Col>
-  </ReactBootStrap.Row>
-<br/>
-<br/>
-<br/>
-<br/>
-  <ReactBootStrap.Row>
-    <ReactBootStrap.Col xs={7}  style={{ display: "flex", justifyContent: "center", alignItems:"center"}} >
-    <img src={logooo} alt="Logo" />
-    </ReactBootStrap.Col>
-    <ReactBootStrap.Col xs={5} style={{display:"flex", flexDirection:"column", justifyContent:"center", alignContent:"center"}}> <h1 style={{fontWeight:"700"}} className="cardsh">Myra, your cupid ;)</h1>
-    <p  className="cardp" style={{paddingTop:"15px"}}>Your personal cupid, on whenever you or your partner feel bored, with magic tools hellp you build connection and increase fondness for one another.</p>
-    <a   style={{textDecoration:"none" , color:"#EB0090", fontWeight:"700", fontSize:"17px"}} onClick={() => setpopup(true)}>Explore</a>
-    </ReactBootStrap.Col>
-  </ReactBootStrap.Row>
-</ReactBootStrap.Container>
-<Form trigger={popup} setTrigger={setpopup}>
-<iframe style={{width:"600px", height:"500px"}} src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6"/>
-</Form>
-        </div>
-      
-    )
+
+        <ReactBootStrap.Row className="card__second"> 
+          <ReactBootStrap.Col className="second__text">
+            {" "}
+            <h1 className="cardsh">
+              In-depth conversations
+            </h1>
+            <p className="cardp">
+              No awkward pauses, intriguing communication with on-demand hints
+              and suggestions. fun ways to Explore about each other.{" "}
+            </p>
+            <div className="link"><a > Explore</a></div>
+          </ReactBootStrap.Col>
+          <ReactBootStrap.Col className="second__image">
+          <div className="cardimg"> <img  src={logoo} alt="Logo"/></div>
+          </ReactBootStrap.Col>
+        </ReactBootStrap.Row>
+
+
+        <ReactBootStrap.Row className="card__third">
+          <ReactBootStrap.Col className="third__image">
+           <div className="cardimg"> <img  src={logooo} alt="Logo" /></div>
+          </ReactBootStrap.Col>
+          <ReactBootStrap.Col className="third__text">
+            {" "}
+            <h1 className="cardsh">
+              Myra, your cupid ;)
+            </h1>
+            <p className="cardp">
+              Your personal cupid, on whenever you or your partner feel bored,
+              with magic tools hellp you build connection and increase fondness
+              for one another.
+            </p>
+            <div className="link"><a > Explore</a></div>
+          </ReactBootStrap.Col>
+        </ReactBootStrap.Row>
+      </ReactBootStrap.Container>
+    </div>
+  );
 }
 
-export default Card
+export default Card;

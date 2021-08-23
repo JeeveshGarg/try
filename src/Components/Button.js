@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-  /* Adapt the colors based on primary prop */
   background: #ff0290;
   color: white;
   font-size: 1em;

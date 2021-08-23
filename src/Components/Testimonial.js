@@ -6,13 +6,13 @@ import logop from './ps.png';
 function Testimonial() {
     
     return (
-        <div  id="Testimonial" >
-             <section>
+        <div  id="Testimonial" className="testi__wrap" >
+        <section >
         <div className="customer-feedback">
           <div className="container text-center">
-            <div className="row">
+            <div className="row" >
               <div className="col-sm-offset-2 col-sm-8">
-                <div>
+                <div >
                   <h2 className="section-title">Hear! Hear!</h2>
                 </div>
               </div>{/* /End col */}
@@ -26,15 +26,13 @@ function Testimonial() {
                     <h3 className="customer-name  arefont">Swapnil, Kolkata</h3>
                     <p className="arefont">Candid Connection is a revolutionary idea with unlimited scope of growth. I believe it is going to change the world of online dating and make it more realistic.</p>
                    
-                      
-                     
                   </div>
                  
                   <div className="feedback-slider-item">
                     <img src={logo} style={{zIndex:"-1"}} className="center-block img-circle" alt="Customer Feedback" />
                     <h3 className="customer-name arefont">Riya, Delhi</h3>
                     <p className="arefont">Making dating a little fun and filling energy is a wholesome idea.
-And it's even great for long distance relationships.</p>
+                       And it's even great for long distance relationships.</p>
                    
                   </div>
                   

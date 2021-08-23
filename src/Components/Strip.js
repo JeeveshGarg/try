@@ -3,45 +3,36 @@ import * as ReactBootStrap from "react-bootstrap";
 import logo from "./s1.png";
 import logoo from "./s2.png";
 import logooo from "./s3.png";
-import Form from "../Components/Form";
 import Button from "../Components/Button";
 import { useState } from "react";
 
 function Strip() {
-  const [popup, setpopup] = useState(false);
-  // const [ change , setChange] = useState(false);
-
   return (
     <div id="Card">
-      <ReactBootStrap.Container style={{ marginBottom: "56px" }}>
-        <ReactBootStrap.Row>
-          <ReactBootStrap.Col sm>
-            {" "}
-            <img className="stripimg" src={logo} alt="Logo" />
+      <ReactBootStrap.Container>
+        <ReactBootStrap.Row className="strip__wrap">
+          <ReactBootStrap.Col className="strip__first">
+              <div className="strip__image"><img className="stripimg" src={logo} alt="Logo" /></div>
             <h2 className="striph2">Lively Virtual Dates</h2>
-            <p className="stripp" style={{ width: "400px" }}>
-              Fun exercises, activities, games, curb the awkwarness pauses and
-              be the driver.
+            <p className="stripp">
+              Fun exercises, activities, games, curb the awkwarness pauses and be the driver.
             </p>
           </ReactBootStrap.Col>
-          <ReactBootStrap.Col sm>
-            {" "}
-            <img
+          <ReactBootStrap.Col className="strip__second">
+           <div className="strip__image"><img
               className="stripimg"
               src={logoo}
               alt="Logo"
-              style={{ height: "118px" }}
-            />
+            /></div> 
             <h2 className="striph2">Quick Plug-in</h2>
-            <p className="stripp" style={{ width: "400px" }}>
+            <p className="stripp">
               No App download required, easy to plug in with your web browser.
             </p>
           </ReactBootStrap.Col>
-          <ReactBootStrap.Col sm>
-            {" "}
-            <img className="stripimg" src={logooo} alt="Logo" />
+          <ReactBootStrap.Col className="strip__third">
+            <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" /></div>
             <h2 className="striph2">100% Privacy</h2>
-            <p className="stripp" style={{ width: "400px" }}>
+            <p className="stripp kuch">
               We value your intimacy, conversations are limited to the couples
               in the meet.
             </p>
@@ -49,37 +40,17 @@ function Strip() {
         </ReactBootStrap.Row>
       </ReactBootStrap.Container>
 
+
       <ReactBootStrap.Row>
-        <ReactBootStrap.Col
-          sm={12}
-          style={{
-            background: "#FEC6E8",
-            color: "white",
-            padding: "20px",
-            paddingLeft: "90px",
-            fontSize: "80px !important",
-            marginTop: "15px",
-          }}
-        >
-          <ReactBootStrap.Container style={{ padding: "0" }}>
-            <h1
-              style={{ fontSize: "80px", fontWeight: "700" }}
-              className="striph"
-            >
-            It takes less time, than to make a coffee, to sign up!  <button
-             style={{background:"none",border:"none", fontSize:".23em" , height:"60px", lineHeight: "50px", margin:"0"}}>
+          <ReactBootStrap.Container style={{ padding: "0" }} className="strip__back">
+            <h1  className="striph">
+            It takes less time, than to make a coffee, to sign up!  <button 
+             style={{background:"none",border:"none", fontSize:".4541em" , height:"60px", lineHeight: "50px", margin:"0"}}>
                <Button>MAKE IT HAPPEN!</Button></button></h1> 
-          
           </ReactBootStrap.Container>
-        </ReactBootStrap.Col>
       </ReactBootStrap.Row>
-      <Form trigger={popup} setTrigger={setpopup}>
-        <iframe
-          style={{ width: "600px", height: "500px" }}
-          src="https://cdn.forms-content.sg-form.com/8ab332a3-fab5-11eb-bf25-863f55bc68b6"
-        />
-      </Form>
-      {/* {change && <div style={{position:"absolute", left:"10%", background:"rgba(223, 215, 249, 0.9)", borderRadius:"10px",top:"137%", boxShadow:"0 12px 15px #ccc"}}><Form></Form></div>} */}
+
+
     </div>
   );
 }

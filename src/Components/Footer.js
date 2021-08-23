@@ -1,45 +1,59 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
-import logo from './Facebook.png';
-import logoa from './Twitter.png';
-import logob from './LinkedIn.png';
-import logoc from './Instagram.png';
-import logod from './Pinterest.png';
-import logoe from './GooglePlus.png';
-import logof from './Youtube.png';
-import logog from './RSS.png';
-import logoh from './round-place-24px.png';
-import logoi from './round-phone-24px.png';
-import logoj from './Vect1or.png';
+import logoc from "./Instagram.png";
+import logoh from "./round-place-24px.png";
+import logoi from "./round-phone-24px.png";
+import logoj from "./Vect1or.png";
 function Footer() {
   return (
-     <div style={{marginBottom:0 }}>
+    <div style={{ marginBottom: 0 }}>
       <footer className="py-5 bg-dark">
         <ReactBootStrap.Container>
-            <br/>
-            
-            <hr style={{color:"white"}} />
-            <h1 className="footh" style={{color:"white" , marginTop:"50px", marginBottom:"50px" , float:"left"}}>Candid  <br/>Connections</h1>
-            <div className="social">Follow us
-            <a href="https://www.instagram.com/candid.connection/" className="foota"> <img src={logoc} alt="Logo" /></a>
-            </div> 
-            <div  style={{	position: "absolute",left: "55.1%", marginTop:"59px"}}>
-            <div className="add"><img style={{marginRight:"5px"}} src={logoh} alt="Logo" /> New Delhi, India</div>
-            <span className="foots"> <img style={{marginRight:"8px"}} src={logoi} alt="Logo" />(+91)7390071951</span>
-            <span className="foots" style={{marginLeft:"74px"}}><img style={{marginRight:"5px", height:"13px", width:"16px"}} src={logoj} alt="Logo"/>
-             <a style={{textDecoration:"none",
-                           color: "#FFFFFF"}} href="mailto: hi@candidconnect.tech"> hi@candidconnect.tech </a></span>
+          <hr className="hrtag"></hr>
+          <div className="footer__top">
+            <div className="top__left">
+              <h1 className="footh"> Candid <br/>Connections </h1>
             </div>
-            <hr style={{color:"white", clear:"both"}} />
-            <div style={{display:"flex",marginBottom:"30px" }}>
-              <ReactBootStrap.Nav.Link href="#Card" style={{color:"grey", marginRight:"50px"}}>Features</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link href="#Contact" style={{color:"grey", marginRight:"50px"}}>Contact Us</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link href="#Home" style={{color:"grey", marginRight:"50px"}}>Home</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link style={{color:"grey", marginLeft:"420px", fontSize:"12px"}}>Copyright © 2021.</ReactBootStrap.Nav.Link>
+            <div className="top__right">
+              <div className="footer__left">
+                <div className="add">
+                  <img className="footerimg" src={logoh} alt="Logo" /> New
+                  Delhi, India
+                </div>
+                <div className="num">
+                  <img className="footerimg" src={logoi} alt="Logo" />
+                  (+91)7390071951
+                </div>
+              </div>
+              <div className="footer__right">
+                <div className="email">
+                  <img className="footerimg" src={logoj} alt="Logo" />
+                  <a href="mailto: hi@candidconnect.tech">
+                    {" "}
+                    hi@candidconnect.tech
+                  </a>
+                </div>
+                <div className="social">
+                  <a href="https://www.instagram.com/candid.connection/">
+                    {" "}
+                    <img className="footerimg" src={logoc} alt="Logo" />
+                  </a>
+                  Follow us
+                </div>
+              </div>
             </div>
+          </div>
+          <hr className="hrtag"></hr>
+          {/* footer bottom */}
+          <div className="footer__bottom">
+                <a href="#Home">Home</a>
+                <a href="#Contact">Contact Us </a>
+                <a href="#Home">Features</a>
+                <a href="#Card">Team</a>
+          </div>
         </ReactBootStrap.Container>
       </footer>
-     </div>
+    </div>
   );
 }
 
