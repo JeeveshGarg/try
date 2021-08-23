@@ -22,13 +22,6 @@ top: 21px;
 	justify-content: left !important;
 }
 
-.navbrand{
-	display: flex;
-	flex-direction:row;
-	padding-left: 5px !important;
-	margin-left: 15% !important;
-}
-
 .dark{
 	background-color: #222;
 	color: #e6e6e6;

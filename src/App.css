@@ -14,10 +14,18 @@
 .contact__main {
   margin-top: 56px;
 }
+
+.navbrand{
+	display: flex;
+	flex-direction:row;
+	padding-left: 5px !important;
+	margin-left: 50px!important;
+}
+
 .nav__btn{
   font-size: 1rem !important;
   background: none ;
-  border: none !;
+  border: none ;
 }
 .header__main {
   display: flex;
@@ -577,7 +585,7 @@ body {
 .nav__btn{
   font-size: 1.8rem !important;
   background: none ;
-  border: none !;
+  border: none ;
 }
 .footer__top{
   color: #FFFFFF;
@@ -660,4 +668,13 @@ color: #a3a2a2;
 .footerimg{
   color: #a3a2a2;
 }
+
+
+.navbrand{
+	display: flex;
+	flex-direction:row;
+	padding-left: 5px !important;
+	margin-left: 50px !important;
+}
+
 }
