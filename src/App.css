@@ -14,7 +14,11 @@
 .contact__main {
   margin-top: 56px;
 }
-
+.nav__btn{
+  font-size: 1rem !important;
+  background: none ;
+  border: none !;
+}
 .header__main {
   display: flex;
   margin-top: 36px;
@@ -242,7 +246,7 @@ body {
   display: flex !important;
   text-align: center !important;
   color: #eb0090 !important;
-  margin: 10px !important;
+  /* margin: 10px !important; */
   justify-content: center !important;
   margin-top: 33px !important ;
 }
@@ -573,7 +577,7 @@ body {
 .nav__btn{
   font-size: 1.8rem !important;
   background: none ;
-  border: none;
+  border: none !;
 }
 .footer__top{
   color: #FFFFFF;

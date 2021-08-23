@@ -1,7 +1,6 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import logoo from "./Logos.png";
-import logo from "./n.png";
 import Button from "../Components/Button";
 import "../App.css";
 function Navbar() {
@@ -45,28 +44,6 @@ function Navbar() {
               >
                 Contact Us
               </ReactBootStrap.Nav.Link>
-              {/* <ReactBootStrap.Nav.Link>
-              <button
-                style={{
-                  borderRadius: "50%",
-                  height: "50px",
-                  width: "50px",
-                  display: "contents",
-                }}
-              >
-                <img
-                  style={{
-                    margin: "20px",
-                    width: "25px",
-                    height: "25px",
-                    background: "white",
-                    borderRadius: "50%",
-                  }}
-                  src={logo}
-                  alt="Logo"
-                />
-              </button>
-              </ReactBootStrap.Nav.Link> */}
               <ReactBootStrap.Nav.Link >
                <button className="nav__btn"><Button >Get Started</Button></button>
               </ReactBootStrap.Nav.Link>
