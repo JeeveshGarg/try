@@ -249,6 +249,11 @@ body {
 .footer__bottom a:hover{
   color: #EB0090;
 }
+.hrtag{
+  border: 1px solid white;
+  color:white;
+  margin-top: 3% !important;
+}
 
 /* new */
 .footer__top{
@@ -292,7 +297,7 @@ font-family: Poppins;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
-line-height: 34px;
+line-height: 30px;
 color: #FFFFFF;
 }
 
@@ -300,23 +305,23 @@ color: #FFFFFF;
 font-family: Assistant;
 font-style: normal;
 font-weight: normal;
-font-size: 10px;
+font-size: 8px;
 line-height: 14px;
 color: #a3a2a2;
 
 }
-.social{
+/* .social{
   margin-top: 17%;
-}
-.num{
+} */
+/* .num{
   margin-top: 8%; 
-}
+} */
 .email a{
   text-decoration:none;
   font-family:Assistant;
 font-style:normal;
 font-weight:normal;
-font-size:10px;
+font-size:8px;
 line-height:14px;
 color: #a3a2a2;
 }
@@ -330,6 +335,8 @@ color: #a3a2a2;
 
 .footerimg{
   color: #a3a2a2;
+  width: 10px;
+  height: 10px;
 }
 }
 
