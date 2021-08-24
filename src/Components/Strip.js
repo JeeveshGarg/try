@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import * as ReactBootStrap from "react-bootstrap";
 import logo from "./s1.png";
 import logoo from "./s2.png";
@@ -7,18 +10,21 @@ import Button from "../Components/Button";
 import { useState } from "react";
 
 function Strip() {
+  useEffect(() =>{
+    AOS.init();
+  })
   return (
     <div id="Card">
       <ReactBootStrap.Container>
         <ReactBootStrap.Row className="strip__wrap">
-          <ReactBootStrap.Col className="strip__first">
+          <ReactBootStrap.Col className="strip__first"  data-aos='fade-up'>
               <div className="strip__image"><img className="stripimg" src={logo} alt="Logo" /></div>
             <h2 className="striph2">Lively Virtual Dates</h2>
             <p className="stripp">
               Fun exercises, activities, games, curb the awkwarness pauses and be the driver.
             </p>
           </ReactBootStrap.Col>
-          <ReactBootStrap.Col className="strip__second">
+          <ReactBootStrap.Col className="strip__second"  data-aos='fade-up'>
            <div className="strip__image"><img
               className="stripimg"
               src={logoo}
@@ -29,7 +35,7 @@ function Strip() {
               No App download required, easy to plug in with your web browser.
             </p>
           </ReactBootStrap.Col>
-          <ReactBootStrap.Col className="strip__third">
+          <ReactBootStrap.Col className="strip__third"  data-aos='fade-up'> 
             <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" /></div>
             <h2 className="striph2">100% Privacy</h2>
             <p className="stripp kuch">
