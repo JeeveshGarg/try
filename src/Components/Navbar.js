@@ -45,7 +45,7 @@ function Navbar() {
                 Contact Us
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link >
-               <button className="nav__btn"><Button >Get Started</Button></button>
+               <button className="nav__btn"><Button >Get Access</Button></button>
               </ReactBootStrap.Nav.Link>
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>

@@ -8,6 +8,7 @@ import logoo from "./c2.png";
 import logooo from "./c3.png";
 import "../App.css";
 import { useState } from "react";
+import Button from "../Components/Button";
 function Card() {
   useEffect(() =>{
     AOS.init();
@@ -31,7 +32,8 @@ function Card() {
               your partner closer together or at least make for an interesting
               date night.
             </p>
-            <div className="link"><a > Explore</a></div>
+           
+            <div className="link"> <Button cardsbtn>Get Access</Button></div>
           </ReactBootStrap.Col>
         </ReactBootStrap.Row>
 
@@ -46,7 +48,8 @@ function Card() {
               No awkward pauses, intriguing communication with on-demand hints
               and suggestions. fun ways to Explore about each other.{" "}
             </p>
-            <div className="link"><a > Explore</a></div>
+            
+            <div className="link"><Button cardsbtn>Get Access</Button></div>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="second__image" data-aos='fade-left' data-aos-delay="250" data-aos-once="false">
           <div className="cardimg"> <img  src={logoo} alt="Logo"/></div>
@@ -68,7 +71,7 @@ function Card() {
               with magic tools hellp you build connection and increase fondness
               for one another.
             </p>
-            <div className="link"><a > Explore</a></div>
+            <div className="link"><Button cardsbtn>Get Access</Button></div>
           </ReactBootStrap.Col>
         </ReactBootStrap.Row>
       </ReactBootStrap.Container>

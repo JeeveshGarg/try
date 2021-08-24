@@ -7,8 +7,6 @@ import logo from "./s1.png";
 import logoo from "./s2.png";
 import logooo from "./s3.png";
 import Button from "../Components/Button";
-import { useState } from "react";
-
 function Strip() {
   useEffect(() =>{
     AOS.init();
