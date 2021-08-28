@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as ReactBootStrap from "react-bootstrap";
-import logo from "./m.png";
+import logo from "./m.svg";
 import "../App.css";
 import Button from "../Components/Button";
 function Header() {

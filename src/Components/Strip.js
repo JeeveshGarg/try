@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as ReactBootStrap from "react-bootstrap";
-import logo from "./s1.png";
-import logoo from "./s2.png";
-import logooo from "./s3.png";
+import logo from "./s1.svg";
+import logoo from "./s2.svg";
+import logooo from "./s3.svg";
 import Button from "../Components/Button";
 function Strip() {
   useEffect(() =>{

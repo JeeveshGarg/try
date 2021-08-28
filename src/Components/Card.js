@@ -1,11 +1,11 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
-import logo from "./c1.png";
+import logo from "./c1.svg";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import logoo from "./c2.png";
-import logooo from "./c3.png";
+import logoo from "./c2.svg";
+import logooo from "./c3.svg";
 import "../App.css";
 import { useState } from "react";
 import Button from "../Components/Button";

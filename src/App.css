@@ -61,6 +61,7 @@ color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    margin: auto;
 }
 .header__button{
     display: flex;
@@ -146,6 +147,7 @@ font-size: 32px;
 line-height: 40px;
 letter-spacing: -1.56316px;
 color: #19191B;
+text-align: center;
 }
 .cardimg{
 display: flex;
