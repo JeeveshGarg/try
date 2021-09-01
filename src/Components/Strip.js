@@ -19,7 +19,7 @@ function Strip() {
               <div className="strip__image"><img className="stripimg" src={logo} alt="Logo" /></div>
             <h2 className="striph2">Lively Virtual Dates</h2>
             <p className="stripp">
-              Fun exercises, activities, games, curb the awkwarness pauses and be the driver.
+              Fun exercises, activities, games, curb the awkward pauses and be the driver.
             </p>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="strip__second"  data-aos='fade-up'>

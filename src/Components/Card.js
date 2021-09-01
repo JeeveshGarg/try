@@ -13,7 +13,7 @@ function Card() {
   useEffect(() =>{
     AOS.init();
   })
-  const [popup, setpopup] = useState(false);
+  
 
   return (
     <div>
@@ -46,7 +46,7 @@ function Card() {
             </h1>
             <p className="cardp">
               No awkward pauses, intriguing communication with on-demand hints
-              and suggestions. fun ways to Explore about each other.{" "}
+              and suggestions. fun ways to explore about each other.{" "}
             </p>
             
             <div className="link"><Button cardsbtn>Get Access</Button></div>
@@ -68,7 +68,7 @@ function Card() {
             </h1>
             <p className="cardp">
               Your personal cupid, on whenever you or your partner feel bored,
-              with magic tools hellp you build connection and increase fondness
+              with magic tools help you build connection and increase fondness
               for one another.
             </p>
             <div className="link"><Button cardsbtn>Get Access</Button></div>
