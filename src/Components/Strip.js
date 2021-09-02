@@ -7,7 +7,9 @@ import logo from "./s1.svg";
 import logoo from "./s2.svg";
 import logooo from "./s3.svg";
 import Button from "../Components/Button";
-function Strip() {
+
+
+function Strip(props) {
   useEffect(() =>{
     AOS.init();
   })
@@ -17,7 +19,7 @@ function Strip() {
         <ReactBootStrap.Row className="strip__wrap">
           <ReactBootStrap.Col className="strip__first"  data-aos='fade-up'>
               <div className="strip__image"><img className="stripimg" src={logo} alt="Logo" /></div>
-            <h2 className="striph2">Lively Virtual Dates</h2>
+            <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>Lively Virtual Dates</h2>
             <p className="stripp">
               Fun exercises, activities, games, curb the awkward pauses and be the driver.
             </p>
@@ -28,14 +30,14 @@ function Strip() {
               src={logoo}
               alt="Logo"
             /></div> 
-            <h2 className="striph2">Quick Plug-in</h2>
+            <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>Quick Plug-in</h2>
             <p className="stripp">
               No App download required, easy to plug in with your web browser.
             </p>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="strip__third"  data-aos='fade-up'> 
             <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" /></div>
-            <h2 className="striph2">100% Privacy</h2>
+            <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>100% Privacy</h2>
             <p className="stripp kuch">
               We value your intimacy, conversations are limited to the couples
               in the meet.

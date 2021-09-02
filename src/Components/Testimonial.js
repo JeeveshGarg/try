@@ -3,7 +3,7 @@ import './test.css';
 import logo from './as.png';
 import logoo from './ss.png';
 import logop from './ps.png';
-function Testimonial() {
+function Testimonial(props) {
     
     return (
         <div  id="Testimonial" className="testi__wrap" >
@@ -13,7 +13,7 @@ function Testimonial() {
             <div className="row" >
               <div className="col-sm-offset-2 col-sm-8">
                 <div >
-                  <h2 className="section-title">Hear! Hear!</h2>
+                  <h2 className="section-title" style={props.dark ? {color:"white"}: {color:"null"}}>Hear! Hear!</h2>
                 </div>
               </div>{/* /End col */}
             </div>{/* /End row */}

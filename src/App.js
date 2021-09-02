@@ -6,25 +6,30 @@ import Card from "./Components/Card";
 import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import { useState } from "react";
 
 function App() {
+const[dark , setDark]= useState(false);
+function darkon() {
+  setDark(!dark);
+};
   return (
     <>
-      <div>
+      <div style={ dark ? {background:"#19191B"} : {background:"#FFFFFF"}}>
         <div className="navbar__top">
-          <Navbar></Navbar>
+          <Navbar check={darkon}></Navbar>
         </div>
         <div className="header__main">
-          <Header></Header>
+          <Header dark={dark} ></Header>
         </div>
         <div className="strip__main">
-          <Strip></Strip>
+          <Strip dark={dark}></Strip>
         </div>
         <div className="card__main">
-          <Card></Card>
+          <Card dark={dark} ></Card>
         </div>
         <div className="test__main">
-          <Testimonial></Testimonial>
+          <Testimonial dark={dark}></Testimonial>
         </div>
         <div className="contact__main">
           <Contact></Contact>

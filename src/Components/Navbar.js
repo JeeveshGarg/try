@@ -3,7 +3,10 @@ import * as ReactBootStrap from "react-bootstrap";
 import logoo from "./Logos.png";
 import Button from "../Components/Button";
 import "../App.css";
-function Navbar() {
+import logo from "./n.png";
+function Navbar(props) {
+   
+  
   return (
     <div id="Home">
       <ReactBootStrap.Navbar
@@ -11,6 +14,7 @@ function Navbar() {
         expand="lg"
         bg="dark"
         variant="dark"
+       
       >
         <ReactBootStrap.Container>
           <img className="navimg" src={logoo} alt="Logo" />
@@ -45,7 +49,27 @@ function Navbar() {
                 Contact Us
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link >
-               <button className="nav__btn"><Button >Get Access</Button></button>
+              <button onClick={props.check}
+                style={{
+                  borderRadius: "50%",
+                  height: "50px",
+                  width: "50px",
+                  display: "contents",
+                }}
+              >
+                <img onClick={props.check}
+                  style={{
+                    margin: "20px",
+                    width: "25px",
+                    height: "25px",
+                    background: "white",
+                    borderRadius: "50%",
+                  }}
+                  src={logo}
+                  alt="Logo"
+                />
+              </button>
+               <button  className="nav__btn"><Button >Get Started</Button></button>
               </ReactBootStrap.Nav.Link>
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>

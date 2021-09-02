@@ -9,7 +9,7 @@ import logooo from "./c3.svg";
 import "../App.css";
 import { useState } from "react";
 import Button from "../Components/Button";
-function Card() {
+function Card(props) {
   useEffect(() =>{
     AOS.init();
   })
@@ -24,7 +24,7 @@ function Card() {
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="one__text" data-aos='fade-left'>
             {" "}
-            <h1 className="cardsh">
+            <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               Fun interaction games
             </h1>
             <p className="cardp" >
@@ -41,7 +41,7 @@ function Card() {
         <ReactBootStrap.Row className="card__second"> 
           <ReactBootStrap.Col className="second__text" data-aos='fade-right' data-aos-delay="250" data-aos-once="false">
             {" "}
-            <h1 className="cardsh">
+            <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               In-depth conversations
             </h1>
             <p className="cardp">
@@ -63,7 +63,7 @@ function Card() {
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="third__text" data-aos='fade-left' data-aos-delay="250" data-aos-once="false">
             {" "}
-            <h1 className="cardsh">
+            <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               Myra, your cupid ;)
             </h1>
             <p className="cardp">

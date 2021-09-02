@@ -6,7 +6,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import logo from "./m.svg";
 import "../App.css";
 import Button from "../Components/Button";
-function Header() {
+function Header(props) {
   useEffect(() =>{
     AOS.init();
   })
@@ -16,7 +16,7 @@ function Header() {
         <ReactBootStrap.Col  className="header__text">
           
           <div className="header__content" data-aos='fade-up'>
-            <h1 style={{ fontWeight: "700" }} className="headh">
+            <h1 style={{ fontWeight: "700" }} style={props.dark ? {color:"white"}: {color:"#000000"}} className="headh">
               Lit up your<br/>
               online <span style={{ color: "#EB0090" }}>date.</span>
             </h1>
@@ -26,7 +26,7 @@ function Header() {
               engagement.
             </p>
             <div className="header__button">
-              <Button primary> MAKE IT HAPPEN!</Button>
+              <Button primary>BOOK FOR FREE!</Button>
               </div>
           </div>
           
