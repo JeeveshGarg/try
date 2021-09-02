@@ -20,7 +20,7 @@ function Header(props) {
               Lit up your<br/>
               online <span style={{ color: "#EB0090" }}>date.</span>
             </h1>
-            <p className="headp">
+            <p className="headp" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
               Turn your online couple meeting into a playful date. Free of
               boredom, & awkward pauses with intriguing converations & fun
               engagement.

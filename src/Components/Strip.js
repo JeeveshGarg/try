@@ -20,7 +20,7 @@ function Strip(props) {
           <ReactBootStrap.Col className="strip__first"  data-aos='fade-up'>
               <div className="strip__image"><img className="stripimg" src={logo} alt="Logo" /></div>
             <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>Lively Virtual Dates</h2>
-            <p className="stripp">
+            <p className="stripp" style={props.dark ? {color:"white"}: {color:"#000000"}} >
               Fun exercises, activities, games, curb the awkward pauses and be the driver.
             </p>
           </ReactBootStrap.Col>
@@ -31,14 +31,14 @@ function Strip(props) {
               alt="Logo"
             /></div> 
             <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>Quick Plug-in</h2>
-            <p className="stripp">
+            <p className="stripp" style={props.dark ? {color:"white"}: {color:"#000000"}} >
               No App download required, easy to plug in with your web browser.
             </p>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="strip__third"  data-aos='fade-up'> 
             <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" /></div>
             <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>100% Privacy</h2>
-            <p className="stripp kuch">
+            <p className="stripp kuch"  style={props.dark ? {color:"white"}: {color:"#000000"}} >
               We value your intimacy, conversations are limited to the couples
               in the meet.
             </p>

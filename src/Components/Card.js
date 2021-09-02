@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 import logoo from "./c2.svg";
 import logooo from "./c3.svg";
 import "../App.css";
-import { useState } from "react";
 import Button from "../Components/Button";
 function Card(props) {
   useEffect(() =>{
@@ -27,7 +26,7 @@ function Card(props) {
             <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               Fun interaction games
             </h1>
-            <p className="cardp" >
+            <p className="cardp"  style={props.dark ? {color:"white"}: {color:"#000000"}} >
               Rapid fires, plenty of romantic games that can help bring you and
               your partner closer together or at least make for an interesting
               date night.
@@ -44,7 +43,7 @@ function Card(props) {
             <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               In-depth conversations
             </h1>
-            <p className="cardp">
+            <p className="cardp" style={props.dark ? {color:"white"}: {color:"#000000"}} >
               No awkward pauses, intriguing communication with on-demand hints
               and suggestions. fun ways to explore about each other.{" "}
             </p>
@@ -66,7 +65,7 @@ function Card(props) {
             <h1 className="cardsh" style={props.dark ? {color:"white"}: {color:"#000000"}}>
               Myra, your cupid ;)
             </h1>
-            <p className="cardp">
+            <p className="cardp" style={props.dark ? {color:"white"}: {color:"#000000"}} >
               Your personal cupid, on whenever you or your partner feel bored,
               with magic tools help you build connection and increase fondness
               for one another.
