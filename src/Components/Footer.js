@@ -1,6 +1,7 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import logoc from "./Instagram.png";
+import logo4 from "./4.png";
 import logoh from "./round-place-24px.png";
 import logoi from "./round-phone-24px.png";
 import logoj from "./Vect1or.png";
@@ -34,6 +35,10 @@ function Footer() {
                   </a>
                 </div>
                 <div className="social">
+                  <a href="https://www.clubhouse.com/club/candid-connections">
+                    {" "}
+                    <img style={{height:"19px"}} className="footerimg" src={logo4} alt="Logo" />
+                  </a>
                   <a href="https://www.instagram.com/candid.connection/">
                     {" "}
                     <img className="footerimg" src={logoc} alt="Logo" />
