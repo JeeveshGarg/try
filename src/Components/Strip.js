@@ -25,19 +25,19 @@ function Strip(props) {
             </p>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="strip__second"  data-aos='fade-up'>
-           <div className="strip__image"><img
+            <div className="strip__image"><img
               className="stripimg"
               src={logoo}
-              alt="Logo"
-            /></div> 
+              alt="Logo"/>
+            </div> 
             <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>Quick Plug-in</h2>
             <p className="stripp" style={props.dark ? {color:"white"}: {color:"#000000"}} >
               No App download required, easy to plug in with your web browser.
             </p>
           </ReactBootStrap.Col>
           <ReactBootStrap.Col className="strip__third"  data-aos='fade-up'> 
-            <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" /></div>
-            <h2 className="striph2" style={props.dark ? {color:"white"}: {color:"#000000"}}>100% Privacy</h2>
+            <div className="strip__image"><img className="stripimg" src={logooo} alt="Logo" style={ {height:"120px",width:"120px"}} /></div>
+            <h2 className="striph2"   style={props.dark ? {color:"white", marginTop:"10px"}: {color:"#000000",marginTop:"10px"}} >100% Privacy</h2>
             <p className="stripp kuch"  style={props.dark ? {color:"white"}: {color:"#000000"}} >
               We value your intimacy, conversations are limited to the couples
               in the meet.
@@ -51,8 +51,8 @@ function Strip(props) {
           <ReactBootStrap.Container style={{ padding: "0" }} className="strip__back">
             <h1  className="striph">
             It takes less time, than to make a coffee, to sign up!  <button 
-             style={{background:"none",border:"none", fontSize:".4541em" , height:"60px", lineHeight: "50px", margin:"0"}}>
-               <Button>BOOK A CANDID DATE!</Button></button></h1> 
+              style={{background:"none",border:"none", fontSize:".4541em" , height:"60px", lineHeight: "50px", margin:"0"}}>
+              <Button>BOOK A CANDID DATE!</Button></button></h1> 
           </ReactBootStrap.Container>
       </ReactBootStrap.Row>
 
