@@ -6,6 +6,8 @@ import Card from "./Components/Card";
 import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Candid from "./Components/Candid";
+
 import { useState } from "react";
 
 function App() {
@@ -27,6 +29,9 @@ function darkon() {
         </div>
         <div className="card__main">
           <Card dark={dark} ></Card>
+        </div>
+        <div className="candid_strip">
+          <Candid dark={dark} ></Candid>
         </div>
         <div className="test__main">
           <Testimonial dark={dark}></Testimonial>

@@ -37,6 +37,12 @@ function Navbar(props) {
                 Features
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link className="navitems"
+                href="#Card"
+                style={{ margin: "10px", marginRight: "25px", color: "grey" }}
+              >
+                Candid
+              </ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navitems"
                 href="#Testimonial"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >
