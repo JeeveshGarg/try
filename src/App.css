@@ -129,7 +129,7 @@
     letter-spacing: -2.50105px;
     color: #ffffff;
   }
-  .candidh {
+  /* .candidh {
     padding: 20px;
     font-family: DM Sans;
     font-style: normal;
@@ -159,7 +159,7 @@
     text-align: center;
     margin-top: 10px;
     height: 60px;
-  }
+  } */
   .strip__back {
     margin-top: 56px !important;
     background: #fec6e8;
@@ -505,7 +505,7 @@
     padding-left: 6%;
   }
 
-  .candidh {
+  /* .candidh {
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -518,12 +518,12 @@
     padding-bottom: 2%;
     padding-right: 2%;
     padding-left: 6%;
-  }
+  } */
   .strip__back {
     margin-top: 86px !important;
     background-color: #fec6e8;
   }
-  .candidbtn {
+  /* .candidbtn {
     font-family: DM Sans;
     border: none;
     background: #ff0290;
@@ -542,7 +542,7 @@
     text-align: center;
     margin-top: 10px;
     height: 60px;
-  }
+  } */
   .strip__back .striph button {
     font-family: DM Sans;
     font-style: normal;
