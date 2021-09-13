@@ -26,7 +26,7 @@ function Header(props) {
               engagement.
             </p>
             <div className="header__button">
-              <Button primary>BOOK A CANDID DATE!</Button>
+              <Button primary>BOOK For Free!</Button>
               </div>
           </div>
           
