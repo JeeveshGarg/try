@@ -54,7 +54,7 @@ function Footer() {
                 <a href="#Home">Home</a>
                 <a href="#Contact">Contact Us </a>
                 <a href="#card">Features</a>
-                <a href="#">Team</a>
+               
           </div>
         </ReactBootStrap.Container>
       </footer>

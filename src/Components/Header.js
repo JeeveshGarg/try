@@ -22,7 +22,7 @@ function Header(props) {
             </h1>
             <p className="headp" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
               Turn your online couple meeting into a playful date. Free of
-              boredom, & awkward pauses with intriguing converations & fun
+              boredom, & awkward pauses with intriguing conversations & fun
               engagement.
             </p>
             <div className="header__button">
