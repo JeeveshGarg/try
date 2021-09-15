@@ -43,7 +43,7 @@ function Footer() {
                     {" "}
                     <img className="footerimg" src={logoc} alt="Logo" />
                   </a>
-                  Follow us
+                 
                 </div>
               </div>
             </div>

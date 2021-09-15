@@ -18,7 +18,7 @@ function Header(props) {
           <div className="header__content" data-aos='fade-up'>
             <h1 style={{ fontWeight: "700" }} style={props.dark ? {color:"white"}: {color:"#000000"}} className="headh">
               Lit up your<br/>
-              Virtual <span style={{ color: "#EB0090" }}>dates.</span>
+              virtual <span style={{ color: "#EB0090" }}>dates.</span>
             </h1>
             <p className="headp" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
               Turn your online couple meeting into a playful date. Free of
