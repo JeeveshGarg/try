@@ -18,32 +18,32 @@ function Navbar(props) {
       >
         <ReactBootStrap.Container>
           <img className="navimg" src={logoo} alt="Logo" />
-          <ReactBootStrap.Navbar.Brand href="#home" className="navbrand">
+          <ReactBootStrap.Navbar.Brand href="/#home" className="navbrand">
             Candid Connections
           </ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
             <ReactBootStrap.Nav className="me-auto"></ReactBootStrap.Nav>
             <ReactBootStrap.Nav targetOffset="65px">
-              <ReactBootStrap.Nav.Link href="#Home" className="navitems"
+              <ReactBootStrap.Nav.Link href="/#Home" className="navitems"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >
                 Home
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link className="navitems"
-                href="#Card"
+                href="/test"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >
-                Features
+                Start Test
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link className="navitems"
-                href="#Testimonial"
+                href="/#Testimonial"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >
                 What People Say
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link className="navitems"
-                href="#Contact"
+                href="/#Contact"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >
                 Contact Us
