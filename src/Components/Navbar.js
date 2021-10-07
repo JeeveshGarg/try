@@ -37,6 +37,12 @@ function Navbar(props) {
                 Take Test
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link className="navitems"
+                href="/Date"
+                style={{ margin: "10px", marginRight: "25px", color: "grey" }}
+              >
+                Candid Date
+              </ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navitems"
                 href="/#Testimonial"
                 style={{ margin: "10px", marginRight: "25px", color: "grey" }}
               >

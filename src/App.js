@@ -10,6 +10,8 @@ import Candid from "./Components/Candid";
 import { useState } from "react";
 import Followus from "./Components/Followus";
 import Start from "./Components/Start";
+import {Date} from "./Components/Date";
+
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 function App() {
   const [dark, setDark] = useState(false);
@@ -58,6 +60,15 @@ function App() {
                 <Navbar check={darkon}></Navbar>
               </div>
               <Start></Start>
+              <div className="footer__main">
+                <Footer></Footer>
+              </div>
+            </Route>
+            <Route path="/Date">
+            <div className="navbar__top">
+                <Navbar check={darkon}></Navbar>
+              </div>
+              <Date></Date>
               <div className="footer__main">
                 <Footer></Footer>
               </div>
