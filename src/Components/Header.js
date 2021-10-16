@@ -26,7 +26,32 @@ function Header(props) {
               engagement.
             </p>
             <div className="header__button">
-              <Button primary>BOOK FOR FREE!</Button>
+            <button
+                data-tf-popup="Hm611Yua"
+                style={{
+                  all: "unset",
+                  fontFamily: "Helvetica,Arial,sans-serif",
+                  display: "inline-block",
+                  maxWidth: "100%",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  backgroundColor: "#EB0090",
+                  color: "#FFFFFF",
+                  fontSize: "20px",
+                  borderRadius: "7px",
+                  padding: "0 33px",
+                  fontWeight: "bold",
+                  height: "50px",
+                  cursor: "pointer",
+                  lineHeight: "50px",
+                  textAlign: "center",
+                  margin: 0,
+                  textDecoration: "none",
+                }}
+              >
+                Join the Waitlist!
+              </button>{" "}
               </div>
           </div>
           

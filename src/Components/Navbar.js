@@ -48,12 +48,7 @@ function Navbar(props) {
               >
                 What People Say
               </ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link className="navitems"
-                href="/#Contact"
-                style={{ margin: "10px", marginRight: "25px", color: "grey" }}
-              >
-                Contact Us
-              </ReactBootStrap.Nav.Link>
+             
               <ReactBootStrap.Nav.Link >
               <button onClick={props.check}
                 style={{
