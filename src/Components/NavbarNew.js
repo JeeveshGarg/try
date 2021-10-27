@@ -14,7 +14,7 @@ function NavbarNew({check,dark}) {
     return (
       <main>
         <div className = "flex items-center w-full px-16 md:px-32 lg:px-48 justify-between pb-6 pt-8 md:pt-12  relative">
-                <div className = "w-60% sm:w-40% md:w-30% flex items-center pt-0 md:pt-10">
+                <div className = "w-60% sm:w-40% md:w-30% flex items-center">
                 <img className = "w-40px h-40px mr-2" src={CClogo} alt="Logo" />
                 <h2 className = "text-pink font-bold pt-1  text-3xl lg:text-4xl">Candid Connections</h2>
 
