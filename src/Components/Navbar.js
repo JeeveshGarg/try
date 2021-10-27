@@ -4,8 +4,9 @@ import logoo from "./Logos.png";
 import Button from "../Components/Button";
 import "../App.css";
 import logo from "./n.png";
+import {useAuth} from './../hooks/use-auth'
 function Navbar(props) {
-   
+   const auth = useAuth()
   
   return (
     <div id="Home">
@@ -18,6 +19,7 @@ function Navbar(props) {
       >
         <ReactBootStrap.Container>
           <img className="navimg" src={logoo} alt="Logo" />
+          {/* <button className = "text-white" onClick = {()=>auth.signout()}>Sign Out</button> */}
           <ReactBootStrap.Navbar.Brand href="/#home" className="navbrand">
             Candid Connections
           </ReactBootStrap.Navbar.Brand>

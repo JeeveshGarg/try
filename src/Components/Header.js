@@ -27,7 +27,8 @@ function Header(props) {
             </p>
             <div className="header__button">
             <button
-                data-tf-popup="Hm611Yua"
+                onClick  = {()=> props.setShowSignInModal(true)}
+                // data-tf-popup="Hm611Yua"
                 style={{
                   all: "unset",
                   fontFamily: "Helvetica,Arial,sans-serif",
