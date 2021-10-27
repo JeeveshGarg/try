@@ -12,7 +12,7 @@ function NavbarNew({check,dark}) {
     return (
       <main>
         <div className = "flex items-center w-full px-16 md:px-32 lg:px-48 justify-between pb-6 pt-8 md:pt-12  relative">
-                <h2 className = "text-pink font-bold w-60% sm:w-40% md:w-20% lg:text-4xl">Candid Connections</h2>
+                <h2 className = "text-pink font-bold w-60% sm:w-40% md:w-20% text-3xl lg:text-4xl">Candid Connections</h2>
                 <article className = 'hidden md:flex w-100% md:w-50%  justify-between items-center h-full'>
                 <Link  to = '/' className = "no-underline"><p onClick = {()=>setNavShow(!navShow)} className = {`${location.pathname === "/"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Home</p></Link>
                 <Link onClick = {()=>setNavShow(!navShow)} to = '/test' className = "no-underline"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Take Test</p></Link>
