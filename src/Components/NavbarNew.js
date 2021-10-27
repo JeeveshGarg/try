@@ -3,6 +3,8 @@ import {Link,useLocation} from 'react-router-dom';
 import logo from "./n.png";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import CClogo from "./Logos.png";
+
 
 
 function NavbarNew({check,dark}) {
@@ -12,11 +14,18 @@ function NavbarNew({check,dark}) {
     return (
       <main>
         <div className = "flex items-center w-full px-16 md:px-32 lg:px-48 justify-between pb-6 pt-8 md:pt-12  relative">
-                <h2 className = "text-pink font-bold w-60% sm:w-40% md:w-20% text-3xl lg:text-4xl">Candid Connections</h2>
+                <div className = "w-60% sm:w-40% md:w-30% flex items-center pt-0 md:pt-10">
+                <img className = "w-40px h-40px mr-2" src={CClogo} alt="Logo" />
+                <h2 className = "text-pink font-bold pt-1  text-3xl lg:text-4xl">Candid Connections</h2>
+
+                </div>
                 <article className = 'hidden md:flex w-100% md:w-50%  justify-between items-center h-full'>
                 <Link  to = '/' className = "no-underline"><p onClick = {()=>setNavShow(!navShow)} className = {`${location.pathname === "/"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Home</p></Link>
-                <Link onClick = {()=>setNavShow(!navShow)} to = '/test' className = "no-underline"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Take Test</p></Link>
-                <Link onClick = {()=>setNavShow(!navShow)} to = '/Date' className = "no-underline"><p className = {`${location.pathname === "/Date"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Candid Date</p></Link>
+                {/* <Link onClick = {()=>setNavShow(!navShow)} to = '/test' className = "no-underline"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Take Test</p></Link> */}
+                <a className = "no-underline" href = "/test"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Take Test</p></a>
+                {/* <Link onClick = {()=>setNavShow(!navShow)} to = '/Date' className = "no-underline"><p className = {`${location.pathname === "/Date"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Candid Date</p></Link> */}
+                <a className = "no-underline" href = "/Date"><p className = {`${location.pathname === "/Date"?'underline-text':''}  text-gray-other text-lg md:text-xl lg:text-2xl pt-2`}>Candid Date</p></a>
+
                 <p className = "cursor-pointer text-gray-other text-lg md:text-xl lg:text-2xl  pt-2"><a className = 'no-underline text-gray-other' href = '/#Testimonial'>What People Say</a></p>
                 </article>
                 <article className = "flex items-center">
