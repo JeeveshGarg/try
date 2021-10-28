@@ -15,7 +15,7 @@ function Header(props) {
       <ReactBootStrap.Row className="header__box">
         <ReactBootStrap.Col  className="header__text">
           
-          <div className="header__content" data-aos='fade-up'>
+          <div className="header__content ml-4" data-aos='fade-up'>
             <h1 style={{ fontWeight: "700" }} style={props.dark ? {color:"white"}: {color:"#000000"}} className="headh">
               Lit up your<br/>
               virtual <span style={{ color: "#EB0090" }}>dates.</span>
