@@ -14,7 +14,7 @@ import { Carousel } from "react-responsive-carousel";
 const Followus = () => {
   return (
     <div className="main">
-      <h1 className="followh">Follow@Candid.Connection</h1>
+      <h1 className="followh text-5xl md:text-6xl">Follow@Candid.Connection</h1>
       <ReactBootStrap.Container>
         <ReactBootStrap.Row>
           <ReactBootStrap.Col>
