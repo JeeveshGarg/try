@@ -2,20 +2,20 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import * as ReactBootStrap from "react-bootstrap";
 import logo from "./m.svg";
 import "../App.css";
-import Button from "../Components/Button";
-function Header(props) {
-  useEffect(() =>{
-    AOS.init();
-  })
-  return (
-    <ReactBootStrap.Container >
-      <ReactBootStrap.Row className="header__box">
-        <ReactBootStrap.Col  className="header__text">
-          
-          <div className="header__content ml-4" data-aos='fade-up'>
+
+
+
+function HeaderNew(props) {
+    useEffect(() =>{
+        AOS.init();
+      })
+    return (
+        <main className = 'w-full px-16 md:px-32 lg:px-40'>
+            <div className = 'flex-col-reverse md:flex-row flex' >
+                <div className = ''>
+            <div className="header__content" data-aos='fade-up'>
             <h1 style={{ fontWeight: "700" }} style={props.dark ? {color:"white"}: {color:"#000000"}} className="headh">
               Lit up your<br/>
               virtual <span style={{ color: "#EB0090" }}>dates.</span>
@@ -55,14 +55,14 @@ function Header(props) {
               </button>{" "}
               </div>
           </div>
-          
-        </ReactBootStrap.Col>
-        <ReactBootStrap.Col  className="header__image">
+          </div>
+          <div  className="">
          <div className="header__img" data-aos='fade-up'><img src={logo} alt="Logo" /></div> 
-        </ReactBootStrap.Col>
-      </ReactBootStrap.Row>
-    </ReactBootStrap.Container>
-  );
+        </div>
+          </div>
+          
+        </main>
+    )
 }
 
-export default Header;
+export default HeaderNew

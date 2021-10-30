@@ -20,6 +20,7 @@ import {useAuth} from './hooks/use-auth';
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Check from "./Components/Check";
+import HeaderNew from "./Components/HeaderNew";
 function App() {
   const [showSignUpModal, setShowSignUpModal] = useState(false)
   const [showSignInModal, setShowSignInModal] = useState(false)
@@ -55,7 +56,8 @@ function App() {
                 {/* <Check/> */}
               </div>
               <div className="header__main">
-                <Header setShowSignInModal = {setShowSignInModal} dark={dark}></Header>
+                {/* <Header setShowSignInModal = {setShowSignInModal} dark={dark}></Header> */}
+                <HeaderNew setShowSignInModal = {setShowSignInModal} dark={dark}></HeaderNew>
               </div>
               <div className="strip__main">
                 <Strip dark={dark}></Strip>

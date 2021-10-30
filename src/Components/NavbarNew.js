@@ -13,10 +13,17 @@ function NavbarNew({check,dark}) {
     const [navShow, setNavShow] = useState(false)
     return (
       <main>
+<<<<<<< HEAD
         <div className = "flex items-center w-full px-16 md:px-32 lg:px-48 justify-between pb-6 pt-8 md:pt-12  relative">
                 <div className = "w-60% sm:w-40% md:w-30% flex items-center">
                 <img className = "w-40px h-40px mr-2" src={CClogo} alt="Logo" />
                 <h2 className = "text-pink font-bold pt-1  text-3xl lg:text-4xl">Candid Connections</h2>
+=======
+        <div className = "flex items-center w-full px-16 md:px-32 lg:px-40 justify-between pb-6 pt-8 md:pt-12  relative">
+                <div className = "w-60% sm:w-40% md:w-30% flex items-center">
+                <img className = "h-20px w-20px mobile_l:w-30px mobile_l:h-30px mobile_xl:w-40px mobile_xl:h-40px  mr-2" src={CClogo} alt="Logo" />
+                <h2 className = "text-pink font-bold pt-1 text-xl mobile_l:text-2xl mobile_xl:text-3xl lg:text-4xl">Candid Connections</h2>
+>>>>>>> 2935b81 (fix header responsiveness)
 
                 </div>
                 <article className = 'hidden md:flex w-100% md:w-50%  justify-between items-center h-full'>
