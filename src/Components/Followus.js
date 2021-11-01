@@ -11,7 +11,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-const Followus = () => {
+const Followus = ({dark}) => {
   return (
     <div className="main">
       <h1 className={`followh text-5xl md:text-6xl text-${dark?'white':'black'}`}>Follow@Candid.Connection</h1>
