@@ -85,7 +85,7 @@ function App() {
             <Route exact path="/test">
             <div className="navbar__top">
                 {/* <Navbar check={darkon}></Navbar> */}
-                <NavbarNew/>
+                <NavbarNew check = {darkon} dark = {dark} />
               </div>
               <Start></Start>
               <div className="footer__main">
@@ -95,7 +95,7 @@ function App() {
             <Route path="/Date">
             <div className="navbar__top">
                 {/* <Navbar check={darkon}></Navbar> */}
-                <NavbarNew/>
+                <NavbarNew check = {darkon} dark = {dark} />
               </div>
               <Date></Date>
               <div className="footer__main">

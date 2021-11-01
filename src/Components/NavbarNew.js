@@ -44,18 +44,19 @@ function NavbarNew({check,dark}) {
                 /> */}
                 <MdOutlineDarkMode className = "mr-4 cursor-pointer" onClick = {check} size = {24} color = {dark?'#fff':'#000'} />
                     <button className = 'bg-orange-other px-4 md:px-8 lg:px-16  py-4 text-white text-lg md:text-xl lg:text-2xl rounded-lg hidden md:block'>Get Started</button>
-                <GiHamburgerMenu onClick = {()=>setNavShow(!navShow)} size = {22} color = {dark?'#fff':'#000'} className = "ml-2 block md:hidden" />
+                <GiHamburgerMenu onClick = {()=>setNavShow(!navShow)} size = {22} color = {dark?'#fff':'#000'} className = "cursor-pointer ml-2 block md:hidden" />
 
                 </article>
         </div>
         {navShow &&
         <article className = 'flex flex-col items-center md:hidden w-100% md:w-50%  h-full'>
                 <Link to = '/' className = "no-underline"><p className = {`${location.pathname === "/"?'underline-text':''}  text-gray-other  text-xl lg:text-2xl pt-2`}>Home</p></Link>
-                <Link to = '/test' className = "no-underline"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-xl lg:text-2xl pt-2`}>Take Test</p></Link>
-                <Link to = '/Date' className = "no-underline"><p className = {`${location.pathname === "/date"?'underline-text':''}  text-gray-other text-xl lg:text-2xl pt-2`}>Candid Date</p></Link>
+                <a href = '/test' className = "no-underline"><p className = {`${location.pathname === "/test"?'underline-text':''}  text-gray-other text-xl lg:text-2xl pt-2`}>Take Test</p></a>
+                <a href = '/Date' className = "no-underline"><p className = {`${location.pathname === "/date"?'underline-text':''}  text-gray-other text-xl lg:text-2xl pt-2`}>Candid Date</p></a>
                 <p className = "cursor-pointer text-gray-other text-xl lg:text-2xl  pt-2"><a className = 'no-underline text-gray-other' href = '/#Testimonial'>What People Say</a></p>
                 </article>
-          }
+          } 
+
         </main>
     )
 }
