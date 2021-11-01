@@ -43,8 +43,8 @@ function NavbarNew({check,dark}) {
                   alt="Logo"
                 /> */}
                 <MdOutlineDarkMode className = "mr-4 cursor-pointer" onClick = {check} size = {24} color = {dark?'#fff':'#000'} />
-                    <button className = 'bg-orange-other px-4 md:px-8 lg:px-16  py-4 text-white text-lg md:text-xl lg:text-2xl rounded-lg hidden md:block'>Get Started</button>
-                <GiHamburgerMenu onClick = {()=>setNavShow(!navShow)} size = {22} color = {dark?'#fff':'#000'} className = "cursor-pointer ml-2 block md:hidden" />
+                    <button data-tf-popup="Hm611Yua" className = 'bg-orange-other px-4 md:px-8 lg:px-16  py-4 text-white text-lg md:text-xl lg:text-2xl rounded-lg hidden md:block'>Get Started</button>
+          <GiHamburgerMenu onClick = {()=>setNavShow(!navShow)} size = {22} color = {dark?'#fff':'#000'} className = "cursor-pointer ml-2 block md:hidden" />
 
                 </article>
         </div>

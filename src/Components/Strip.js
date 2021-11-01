@@ -52,7 +52,7 @@ function Strip(props) {
             <h1  className="striph">
             It takes less time, than to make a coffee, to sign up!  <button 
               style={{background:"none",border:"none", fontSize:".4541em" , height:"60px", lineHeight: "50px", margin:"0"}}>
-              <Button>BOOK FOR FREE!</Button></button></h1> 
+              <Button >BOOK FOR FREE!</Button></button></h1> 
           </ReactBootStrap.Container>
       </ReactBootStrap.Row>
 
