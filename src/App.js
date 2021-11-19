@@ -11,53 +11,82 @@ import Candid from "./Components/Candid";
 import { useState } from "react";
 import Followus from "./Components/Followus";
 import Start from "./Components/Start";
-import {Date} from "./Components/Date";
-import CallToActionModal from './Components/modals/CallToActionModal';
-import SignUpModal from './Components/modals/SignUpModal';
-import SignInModal from './Components/modals/SignInModal';
-import {useAuth} from './hooks/use-auth';
-
+import { Date } from "./Components/Date";
+import Flowers from "./Components/Flowers";
+import CallToActionModal from "./Components/modals/CallToActionModal";
+import SignUpModal from "./Components/modals/SignUpModal";
+import SignInModal from "./Components/modals/SignInModal";
+import SendFlowersModal from "./Components/modals/SendFlowersModal";
+import SendFlowersSuccessModal from "./Components/modals/SendFlowersSuccessModal";
+import { useAuth } from "./hooks/use-auth";
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Check from "./Components/Check";
 import HeaderNew from "./Components/HeaderNew";
 function App() {
-  const [showSignUpModal, setShowSignUpModal] = useState(false)
-  const [showSignInModal, setShowSignInModal] = useState(false)
-  const [showCallToAction, setShowCallToAction] = useState(false)
+  const [showSignUpModal, setShowSignUpModal] = useState(false);
+  const [showSignInModal, setShowSignInModal] = useState(false);
+  const [showCallToAction, setShowCallToAction] = useState(false);
+  const [showFlowersModal, setShowFlowersModal] = useState(false);
+  const [showFlowersSuccessModal, setShowFlowersSuccessModal] = useState(false);
+  const [currentFlower, setCurrentFlower] = useState({})
+
   const [dark, setDark] = useState(false);
-  const auth  = useAuth()
+  const auth = useAuth();
   function darkon() {
     setDark(!dark);
   }
-  console.log("auth",auth.LoginError)
+  console.log("auth", auth.LoginError);
   return (
-    <div className = "App">
-      { showSignUpModal && <SignUpModal  setShowSignUpModal = {setShowSignUpModal} setShowCallToAction = {setShowCallToAction}/>}
-      {showSignInModal && <SignInModal  setShowSignInModal = {setShowSignInModal} setShowCallToAction = {setShowCallToAction} setShowSignUpModal = {setShowSignUpModal}/>}
-      {showCallToAction && <CallToActionModal setShowCallToAction = {setShowCallToAction} />}
+    <div className="App">
+      {showSignUpModal && (
+        <SignUpModal
+          setShowSignUpModal={setShowSignUpModal}
+          setShowCallToAction={setShowCallToAction}
+        />
+      )}
+      {showSignInModal && (
+        <SignInModal
+          setShowSignInModal={setShowSignInModal}
+          setShowCallToAction={setShowCallToAction}
+          setShowSignUpModal={setShowSignUpModal}
+        />
+      )}
+      {showCallToAction && (
+        <CallToActionModal setShowCallToAction={setShowCallToAction} />
+      )}
+      {showFlowersModal && (
+        <SendFlowersModal setShowFlowersModal={setShowFlowersModal} currentFlower = {currentFlower} />
+      )}
+      {showFlowersSuccessModal && (
+        <SendFlowersSuccessModal
+          setShowFlowersSuccessModal={setShowFlowersSuccessModal}
+        />
+      )}
 
       <Router>
-      {/* <SignInModal/> */}
+        {/* <SignInModal/> */}
 
         <div
           style={dark ? { background: "#19191B" } : { background: "#FFFFFF" }}
         >
-          
-              {/* <CallToActionModal/> */}
-              
-          
+          {/* <CallToActionModal/> */}
+
           <Switch>
             <Route exact path="/">
-            
               <div className="navbar__top">
                 {/* <Navbar check={darkon}></Navbar> */}
-                <NavbarNew check = {darkon} dark = {dark} />
+                <NavbarNew check={darkon} dark={dark} />
                 {/* <Check/> */}
               </div>
               <div className="header__main">
                 {/* <Header setShowSignInModal = {setShowSignInModal} dark={dark}></Header> */}
-                <HeaderNew setShowSignInModal = {setShowSignInModal} dark={dark}></HeaderNew>
+                <HeaderNew
+                  setShowFlowersSuccessModal={setShowFlowersSuccessModal}
+                  setShowFlowersModal={setShowFlowersModal}
+                  setShowSignInModal={setShowSignInModal}
+                  dark={dark}
+                ></HeaderNew>
               </div>
               <div className="strip__main">
                 <Strip dark={dark}></Strip>
@@ -83,9 +112,9 @@ function App() {
               </div>
             </Route>
             <Route exact path="/test">
-            <div className="navbar__top">
+              <div className="navbar__top">
                 {/* <Navbar check={darkon}></Navbar> */}
-                <NavbarNew check = {darkon} dark = {dark} />
+                <NavbarNew check={darkon} dark={dark} />
               </div>
               <Start></Start>
               <div className="footer__main">
@@ -93,11 +122,18 @@ function App() {
               </div>
             </Route>
             <Route path="/Date">
-            <div className="navbar__top">
+              <div className="navbar__top">
                 {/* <Navbar check={darkon}></Navbar> */}
-                <NavbarNew check = {darkon} dark = {dark} />
+                <NavbarNew check={darkon} dark={dark} />
               </div>
               <Date></Date>
+              <div className="footer__main">
+                <Footer></Footer>
+              </div>
+            </Route>
+            {/* Flowers route */}
+            <Route path="/Flowers">
+              <Flowers setShowFlowersModal = {setShowFlowersModal} setCurrentFlower = {setCurrentFlower}/>
               <div className="footer__main">
                 <Footer></Footer>
               </div>

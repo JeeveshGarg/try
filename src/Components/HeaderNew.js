@@ -20,16 +20,32 @@ function HeaderNew(props) {
               Lit up your<br/>
               virtual <span style={{ color: "#EB0090" }}>dates.</span>
             </h1>
-            <p className="headp" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
+            
+            <ul className="hidden md:grid grid-cols-2">
+            <li  className="headp col-span-full  list-disc" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
+               Free of boredom, & awkward pauses
+            </li>
+            <li  className="headp list-disc row-start-2" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
+                Intriguing conversations
+            </li>
+            <li  className="headp list-disc" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
+                Spiced-up engagements
+            </li>
+            </ul>
+            <p className="headp block md:hidden" style={props.dark ? {color:"white"}: {color:"#000000"}}  >
               Turn your online couple meeting into a playful date. Free of
               boredom, & awkward pauses with intriguing conversations & fun
               engagement.
             </p>
             <div className="header__button">
             <button
-                // onClick  = {()=> props.setShowSignInModal(true)}
-                data-tf-popup="Hm611Yua"
+                onClick  = {()=> props.setShowSignInModal(true)}
+                // onClick  = {()=> props.setShowFlowersModal(true)}
+                // onClick  = {()=> props.setShowFlowersSuccessModal(true)}
+                
+                // data-tf-popup="Hm611Yua"
                 style={{
+              
                   all: "unset",
                   fontFamily: "Helvetica,Arial,sans-serif",
                   display: "inline-block",

@@ -13,6 +13,13 @@ module.exports = {
   },
   
     extend: {
+      letterSpacing:{
+        wideMore:'0.5rem',
+        wideMax:'0.75em'
+      },
+      fontSize:{
+        '12xl':'10rem'
+      },
       colors:{
         gray:{
           'light':'#282C4099',
@@ -47,6 +54,7 @@ module.exports = {
         "100px":"100px",
 
 				"10vh": "10vh",
+				"15vh": "15vh",
 				"20vh": "20vh",
 				"30vh": "30vh",
 				"40vh": "40vh",
@@ -54,12 +62,14 @@ module.exports = {
 				"60vh": "60vh",
 				"70vh": "70vh",
 				"80vh": "80vh",
+				"85vh": "85vh",
 				"90vh": "90vh",
         "92vh": "92vh",
 				"100vh": "100vh",
 
         "5%":"5%",
         "10%":"10%",
+        "15%":"15%",
         "20%":"20%",
         "25%":"25%",
         "28%":"28%",
@@ -118,6 +128,7 @@ module.exports = {
       },
     },
   },
+  
   variants: {
     extend: {},
   },
