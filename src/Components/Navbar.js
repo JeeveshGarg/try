@@ -15,7 +15,6 @@ function Navbar(props) {
         expand="lg"
         bg="dark"
         variant="dark"
-       
       >
         <ReactBootStrap.Container>
           <img className="navimg" src={logoo} alt="Logo" />
@@ -50,7 +49,7 @@ function Navbar(props) {
               >
                 What People Say
               </ReactBootStrap.Nav.Link>
-             
+              
               <ReactBootStrap.Nav.Link >
               <button onClick={props.check}
                 style={{

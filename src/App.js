@@ -19,6 +19,7 @@ import SignInModal from "./Components/modals/SignInModal";
 import SendFlowersModal from "./Components/modals/SendFlowersModal";
 import SendFlowersSuccessModal from "./Components/modals/SendFlowersSuccessModal";
 import { useAuth } from "./hooks/use-auth";
+import Community from'./Components/Community/Community';
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Check from "./Components/Check";
@@ -130,6 +131,11 @@ function App() {
               <div className="footer__main">
                 <Footer></Footer>
               </div>
+            </Route>
+            <Route path="/Community">
+              <Community/>
+              {/* <Date></Date> */}
+              {/* <Footer></Footer> */}
             </Route>
             {/* Flowers route */}
             <Route path="/Flowers">
