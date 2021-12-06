@@ -8,17 +8,17 @@ const Community = () => {
   const [feeds, setfeeds] = useState([
     {
       tags: 'LDR',
-      username: 'aditi',
+      username: 'Aditi',
       location: 'Delhi',
       gender: 'M',
       age: '22'
     },
     {
       tags: 'LDR',
-      username: 'aditi',
+      username: 'Ojha',
       location: 'Delhi',
       gender: 'M',
-      age: '22'
+      age: '19'
     }
 
     // {  tags:"LGBTQ",

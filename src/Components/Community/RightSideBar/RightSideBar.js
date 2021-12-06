@@ -9,11 +9,6 @@ const RightSideBar = () => {
   return (
     <div
       style={{
-        // marginTop: "315px",
-        // marginRight: "70px",
-        // position: "absolute",
-        // marginLeft: "990px",
-        // marginBottom: "360px",
         width: '100%'
       }}>
       <Card className="Card " style={{ width: '300px', height: '200px', borderRadius: '12px', marginTop: '7rem' }}>
