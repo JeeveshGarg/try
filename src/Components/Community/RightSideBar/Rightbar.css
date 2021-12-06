@@ -1,6 +1,6 @@
-.Card:hover{
-    
-    opacity: 100%;
-    border-style: groove;
-    transform: translateX(5%);
+.Card:hover {
+  opacity: 100%;
+  border-style: groove;
+  cursor: pointer;
+  transform: translateX(5%);
 }
