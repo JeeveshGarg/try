@@ -4,21 +4,20 @@ import logo from './CC logo (1) 1.svg'
 const Topbar = () => {
   return (
     <div
-      className="topbar"
+      className="topbar flex flex-row md:px-16 px-5 py-2 w-full h-full"
       style={{
-        display: 'flex',
-        flexDirection: 'row',
+       
         background: 'white',
         justifyContent: 'space-between',
-        padding: '10px 10px 60px 10px',
+        // padding: '10px 10px 60px 20px',
         // position: "absolute",
-        width: '100%',
+        // width: '100%',
         // height: "5vh",
-        alignItems: 'flex-start',
-        height: '100%'
+        alignItems: 'center',
+        // height: '100%'
       }}>
       <div style={{ display: 'flex' }}>
-        <img className="candid_logo" style={{ height: '60px', width: '72px', marginLeft: '85px' }} src={logo} alt="oops!"></img>
+        <img className="candid_logo flex " style={{ height: '60px', width: '72px', }} src={logo} alt="oops!"></img>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Button
@@ -60,7 +59,7 @@ const Topbar = () => {
             alignItems: 'center',
             padding: '12px 16px',
             // position: "static",
-            marginRight: '3rem'
+            // marginRight: '3rem'
             // marginBottom:'3rem'
           }}>
           SignUp

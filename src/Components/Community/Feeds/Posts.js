@@ -8,13 +8,13 @@ import share from './share.svg'
 const Post = ({ tags, username, age, gender, location }) => {
   return (
     <div
-      className="px-4 md:px-8 py-4 w-full"
+      className="px-2 md:px-8 py-4 w-full"
       style={{
         backgroundColor: 'white',
         margin: '2.5rem 0',
         borderRadius: '4px'
       }}>
-      <div className="container flex w-50 " style={{ border: 'solid #FEC6EB 1.5px', marginRight: '90rem', height: '2rem' }}>
+      <div className="container flex w-50 " style={{ border: 'solid #FEC6EB 1.5px', marginRight: '90rem', height: '2rem',marginLeft:'10px' }}>
         <div className="img-col">
           <img src={heart} style={{ height: '15px', paddingTop: '1px' }} />
         </div>
@@ -25,10 +25,10 @@ const Post = ({ tags, username, age, gender, location }) => {
       </div>
 
       <div className="container flex justify-start " style={{}}>
-        <div className="img-col w-16 my-auto">
+        <div className="img-col w-16 my-auto ml-2 pt-2">
           <img src={Avatar} />
         </div>
-        <div className="text-col px-4" style={{ paddingTop: '1rem' }}>
+        <div className="text-col px-4 pt-2" style={{ paddingTop: '1rem' }}>
           <div>
             <h4>{username}</h4>
           </div>
@@ -41,36 +41,32 @@ const Post = ({ tags, username, age, gender, location }) => {
       </div>
 
       <div className="md:h-auto md:w-auto" style={{ fontWeight: '400', paddingLeft: '10px', paddingTop: '5px' }}>
-        <h4>Really enjoyed the course. I felt like I was getting what you had advertised online and much more! Really enjoyed the course.</h4>
+        <h5>Really enjoyed the course. I felt like I was getting what you had advertised online and much more! Really enjoyed the course.</h5>
       </div>
-      <div className="flex" style={{ paddingTop: '10px' }}>
-        <div className="container flex " style={{}}>
-          <div className="img-col">
-            <img src={like} style={{ marginRight: '0.5rem', width: '24px', height: '24px' }} />
-          </div>
-          <div className="text-col" style={{ width: '15px', height: '22px' }}>
-            <h4>3</h4>
-          </div>
-        </div>
+      <div className="flex justify-between items-center px-6" style={{ paddingTop: '10px' }}>
 
-        <div className="container flex " style={{ paddingRight: '2rem' }}>
-          <div className="img-col" style={{}}>
-            <img src={comment} style={{ marginRight: '1rem' }} />
-          </div>
-          <div className="text-col" style={{}}>
-            <h4>3</h4>
-          </div>
+        <div className="flex">
+        <div className="flex">
+            <img  className="mt-1 "src={like} style={{ marginRight: '0.5rem', width: '20px', height: '20px' }} />
+            <p><h3 className="pr-2">3</h3></p>
+            </div>
+           
+         <div  className="flex">
+         <img className="ml-4  mb-3"src={comment} style={{ marginRight: '1rem' }} />
+         <p><h3 className="pr-6">3</h3></p>
+         </div>
         </div>
-        <div className="container flex pl-32 md:ml-80" style={{}}>
-          <div className="img-col">
-            <img src={share} />
+          
+           
+          <div  className="flex">
+          <img className="md:" src={share} style={{height:'2rem'}}/>
+          <p className="mr-2 pr-1 pt-1"><h4>3</h4></p>
           </div>
-          <div className="text-col" style={{ paddingLeft: '0.5rem', paddingTop: '0.5rem' }}>
-            <h4>3</h4>
-          </div>
+           
+         
         </div>
-      </div>
-      <input className="my-2 h-10" style={{ border: 'solid #FEC6EB 2px', width: '95%', borderRadius: '4px' }} type="text" />
+    
+      <input className="my-2 h-10" placeholder="Type your comment here" style={{ border: 'solid #FEC6EB 2px', width: '95%', borderRadius: '4px' ,marginLeft:'10px'}} type="text" />
     </div>
   )
 }

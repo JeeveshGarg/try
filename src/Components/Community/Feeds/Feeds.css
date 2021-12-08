@@ -1,7 +1,4 @@
-.container
-{
-    display: flex;
-}
-.container>div{
-    flex-basis: 20%;
+
+.selected{
+    background-image: linear-gradient(rgb(228, 50, 228),rgb(247, 89, 207));
 }

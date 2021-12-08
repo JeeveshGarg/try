@@ -12,15 +12,18 @@ import myra from './myra.svg'
 import Avatar from './Avatar.svg'
 import share from './share.svg'
 import Post from './Posts.js'
+import './Feeds.css';
 const Feeds = ({ feeds }) => {
   return (
-    <div className="w-screen md:w-full pb-32 md:pb-8 flex flex-col px-16 md:px-0 ">
-      <div className="">
+    <div className="w-screen md:w-full pb-32 md:pb-8 flex flex-col px-16 md:px-0">
+      <div className="w-full ml-8">
         <p
           style={{
             fontWeight: 'bold',
             fontSize: '2rem',
-            marginRight: '40rem',
+            // marginRight: '30rem',
+            marginTop:'2.5rem',
+            // marginLeft:"3rem",
             color: '#19191B'
           }}>
           Trends
@@ -28,19 +31,21 @@ const Feeds = ({ feeds }) => {
       </div>
 
       <div
-        className="md:py-2 mb-8 md:mb-0"
+        className="md:py-2 mb-8 md:mb-0 ml-4"
         style={{
           display: 'flex',
           height: '8rem',
           display: 'flex',
-          flexDirection: 'row'
+          flexDirection: 'row',
+          // marginLeft:'3rem',
+          // marginRight:'3rem'
         }}>
-        <div
+        <div className="selected"
           style={{
             display: 'flex',
             borderRadius: '5px',
             marginRight: '0.5rem',
-            backgroundColor: '#FF0099',
+          //  backgroundColor:'purple',
             width: '20%',
             alignItems: 'center',
             justifyContent: 'center',
@@ -59,7 +64,7 @@ const Feeds = ({ feeds }) => {
             display: 'flex',
             borderRadius: '5px',
             marginRight: '0.5rem',
-            width: '20%',
+            width: '15%',
             alignItems: 'center',
             justifyContent: 'center',
             width: '120px',
@@ -77,7 +82,7 @@ const Feeds = ({ feeds }) => {
             display: 'flex',
             borderRadius: '5px',
             marginRight: '0.5rem',
-            width: '20%',
+            width: '15%',
             alignItems: 'center',
             justifyContent: 'center',
             width: '120px',
@@ -95,7 +100,7 @@ const Feeds = ({ feeds }) => {
             display: 'flex',
             borderRadius: '5px',
             marginRight: '0.5rem',
-            width: '20%',
+            width: '15%',
             alignItems: 'center',
             justifyContent: 'center',
             width: '120px',
@@ -113,7 +118,7 @@ const Feeds = ({ feeds }) => {
             display: 'flex',
             borderRadius: '5px',
             marginRight: '0.5rem',
-            width: '20%',
+            width: '30px',
             alignItems: 'center',
             justifyContent: 'center',
             width: '120px',
@@ -140,7 +145,7 @@ const Feeds = ({ feeds }) => {
           </Card.Body>
         </Card>
       </div>
-      <div className="max-w-screen-md">
+      <div className="w-full" style={{}}>
         {feeds.map((feed) => (
           <Post
             username={feed.username}
