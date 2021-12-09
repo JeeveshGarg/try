@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // import React from 'react'
 // import { Card, Form } from 'react-bootstrap'
 // import myra from './myra.svg'
@@ -118,6 +119,16 @@ import Post from './Post.svg'
 import { Dropdown } from 'react-bootstrap'
 import mes from './mes.svg'
 
+=======
+import React from 'react'
+import { Card, Form } from 'react-bootstrap'
+import myra from './myra.svg'
+import sw from './sw.svg'
+import Post from './Post.svg'
+import { Dropdown } from 'react-bootstrap'
+import mes from './mes.svg'
+
+>>>>>>> 65c0698b23e1772007c5009fa52b11f26fda6728
 import './Newpost.css'
 
 import Chevron from './Chevron.svg'
@@ -177,7 +188,11 @@ const Newpost = () => {
                 className="w-full"
                 style={{ backgroundColor: '#F0F0F0', marginTop: '10px', border: 'solid lightgrey 1px', borderRadius: '3px', color: 'grey' }}
                 id="">
+<<<<<<< HEAD
                 <div className="text-xl h-2 pt-1 pr-96 md:pr-54">Add tags(at max 3)<img style={{paddingRight:'50PX'}} src={Chevron}/></div>
+=======
+                <div className="text-xl h-2 pt-1 pr-96 md:pr-52">Add tags(at max 3) </div>
+>>>>>>> 65c0698b23e1772007c5009fa52b11f26fda6728
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -201,9 +216,15 @@ const Newpost = () => {
                 </label>
               </div>
               <div className="text-col pt-4 pl-2 text-lg text-gray-400">Post as anonymous</div>
+<<<<<<< HEAD
               <div className=" abcd img-col mb-32 pt-10 flex" style={{ paddingLeft: '420px' }}>
                 <img src={mes} />
               </div>
+=======
+              {/* <div className=" abcd img-col mb-32 pt-10 flex" style={{ paddingLeft: '420px' }}>
+                <img src={mes} />
+              </div> */}
+>>>>>>> 65c0698b23e1772007c5009fa52b11f26fda6728
               <div className="img-col pt-4 pl-6 pr-20  ">
                 {/* <button onClick> <img src={Post}/></button> */}
                 <div className="">
@@ -220,4 +241,8 @@ const Newpost = () => {
   )
 }
 
+<<<<<<< HEAD
 export default Newpost
+=======
+export default Newpost
+>>>>>>> 65c0698b23e1772007c5009fa52b11f26fda6728
