@@ -3,7 +3,7 @@ import Topbar from './Topbar/Topbar'
 import LeftSideBar from './LeftSideBar/LeftSideBar'
 import RightSideBar from './RightSideBar/RightSideBar'
 import Feeds from './Feeds/Feeds'
-import Newpost from './Newpost/Newpost';
+import Newpost from './Newpost/Newpost'
 import './Community.css'
 import Profile from './Profile/Profile'
 const Community = () => {
@@ -33,7 +33,7 @@ const Community = () => {
     // },
   ])
   return (
-    <div className="community min-h-screen max-w-full" style={{ backgroundColor: '#Ffebf8'}}>
+    <div className="community min-h-screen max-w-full" style={{ backgroundColor: '#Ffebf8' }}>
       <div style={{}}>
         <Topbar style={{}} />
       </div>
@@ -52,14 +52,14 @@ const Community = () => {
         <Feeds feeds={feeds} />
         </div>
         */}
-        <div className="w-65%">
-          <Newpost/>
+        <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full ">
+          <Newpost />
         </div>
 
         {/* <div className="w-65%">
         <Profile/>
         </div> */}
-       
+
         <div className="md:block hidden" style={{ width: '20%', height: '100%', paddingTop: '18px' }}>
           <RightSideBar />
         </div>
