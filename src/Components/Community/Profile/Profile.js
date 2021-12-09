@@ -20,7 +20,7 @@ const Profile = () => {
     >
       <div className="justify-center">
         <div className="pl-40 ml-48">
-          <img src={{ girlavatar }} />
+          <img src={girlavatar } />
           <div>Finn noris</div>
         </div>
 

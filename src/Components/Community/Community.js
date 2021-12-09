@@ -52,13 +52,13 @@ const Community = () => {
         <Feeds feeds={feeds} />
         </div>
         */}
-        {/* <div className="w-65%">
-          <Newpost/>
-        </div> */}
-
         <div className="w-65%">
-        <Profile/>
+          <Newpost/>
         </div>
+
+        {/* <div className="w-65%">
+        <Profile/>
+        </div> */}
        
         <div className="md:block hidden" style={{ width: '20%', height: '100%', paddingTop: '18px' }}>
           <RightSideBar />
