@@ -56,15 +56,10 @@ const Community = () => {
           <Newpost />
         </div>
 
-        {/* <div className="w-65%">
-        <Profile/>
-<<<<<<< HEAD
-        </div>
-        */}
-=======
+        {/* <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full">
+          <Profile />
         </div> */}
-
->>>>>>> 65c0698b23e1772007c5009fa52b11f26fda6728
+       
         <div className="md:block hidden" style={{ width: '20%', height: '100%', paddingTop: '18px' }}>
           <RightSideBar />
         </div>

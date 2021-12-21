@@ -2,17 +2,63 @@ import React from 'react'
 import { Card, Form } from 'react-bootstrap'
 import myra from './myra.svg'
 import sw from './sw.svg'
-import Post from './Post.svg'
+import Post from './Post.svg';
+import makeAnimated from 'react-select/animated';
 import { Dropdown } from 'react-bootstrap'
-import mes from './mes.svg'
+import mes from './mes.svg';
+import Select from 'react-select'
 
 import './Newpost.css'
 
 import Chevron from './Chevron.svg'
 const Newpost = () => {
+  var option=[
+    {
+      value:1,
+      label:"LongDistance"
+    },
+    {
+      value:2,
+      label:"Confession"
+    },
+    {
+      value:3,
+      label:"DateIdeas"
+    },
+    {
+      value:4,
+      label:"Misc"
+    },
+  ]
+  const colourStyles = {
+    control: styles => ({ ...styles, backgroundColor: '#F0F0F0',border:'solid lightgrey 1px' }),
+    option: (styles) => {
+     
+      return {
+        ...styles,
+      
+      };
+    },
+   
+  };
+  
+  
+
+  function customTheme(theme){
+    return{
+      ...theme,
+      colors:{
+        ...theme.colors,
+        primary25:'lightgrey',
+        primary:'lightgrey'
+      },
+    };
+  }
+
+
   return (
     <div
-      className="newpost w-screen md:w-full "
+      className="newpost w-screen md:w-full h-auto"
       style={{
         marginTop: '18px',
         borderRadius: '8px'
@@ -41,26 +87,17 @@ const Newpost = () => {
           <h3 className="pb-3" style={{ fontWeight: 'bold', paddingBottom: '' }}>
             New Posts
           </h3>
-          <div>
+          <div className='pb-4'>
             <textarea
-              className="w-full h-96 border p-4 rounded-lg"
+              className="w-full h-96 shadow-inner p-4 rounded-lg"
               style={{
                 borderTop: 'solid lightgrey 3px',
                 borderLeft: 'solid lightgrey 1px',
                 borderRight: 'solid lightgrey 1px'
               }}></textarea>
-            {/* <div
-              className="h-8 ml-2  flex justify-between"
-              style={{ backgroundColor: '#F0F0F0', paddingTop: '1px', marginTop: '10px', border: 'solid lightgrey 1px', borderRadius: '3px', width: '680px' }}>
-              <div className="" style={{ color: 'grey', paddingLeft: '12px', fontSize: '12px' }}>
-                Mention tag (at max 3)
-              </div>
-              <div>
-                <img className="pr-2 pt-2" style={{ paddingLeft: '500px' }} src={Chevron} />
-              </div>
-            </div> */}
+            
 
-            <Dropdown>
+            {/* <Dropdown>
               <Dropdown.Toggle
                 className="w-full"
                 style={{ backgroundColor: '#F0F0F0', marginTop: '10px', border: 'solid lightgrey 1px', borderRadius: '3px', color: 'grey' }}
@@ -74,7 +111,12 @@ const Newpost = () => {
                 <Dropdown.Item href="#/action-3">Rebound</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">LDR</Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>
+            </Dropdown> */}
+             
+             <Select  options={option} placeholder={'Add tags (at max 3)'} className="bg-neutral-300" isSearchable theme={customTheme} isMulti autoFocus components={makeAnimated}
+             styles={colourStyles}/>
+             
+           
           </div>
 
           <div className="flex justify-between">
@@ -83,20 +125,33 @@ const Newpost = () => {
              <img src={sw}/>
             </div> */}
               <div>
-                <label className="switch">
+                <label className="switch shadow-inner">
                   <input type="checkbox" />
-                  <span className="slider" />
+                  <span className="slider shadow-inner" />
                 </label>
               </div>
-              <div className="text-col pt-4 pl-2 text-lg text-gray-400">Post as anonymous</div>
+              <div className="text-col pt-7 text-xl pl-4 text-lg font-normal md:pr-52 md:mr-44   text-gray-400">Post as anonymous</div>
               {/* <div className=" abcd img-col mb-32 pt-10 flex" style={{ paddingLeft: '420px' }}>
                 <img src={mes} />
               </div> */}
-              <div className="img-col pt-4 pl-6 pr-20  ">
+              {/* <div className="pt-4 ">
+                  <button >
+                    <img src={mes}/>
+                  </button>
+                </div> */}
+                 {/* <div className='pt-4 ml-4'>
+                <button className='ml-4'>
+                  <img src={mes}/>
+                </button>
+                </div> */}
+              <div className="img-col pt-4 ">
                 {/* <button onClick> <img src={Post}/></button> */}
-                <div className="">
-                  <button class="group bg-gray-200 focus:bg-pink-500  ..." style={{ width: '70px', height: '40px', borderRadius: '5px' }}>
-                    <div className="text-white">POST</div>
+               
+               
+                
+                <div className="ml-40 md:ml-16 md:pl-48  flex justify-end">
+                  <button className=" button group  focus:bg-pink-500  ..." style={{ width: '80px', height: '30px', borderRadius: '5px' }}>
+                    <div className="text-gray-400">POST</div>
                   </button>
                 </div>
               </div>
