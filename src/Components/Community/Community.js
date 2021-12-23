@@ -86,13 +86,12 @@ const Community = () => {
         >
           <Switch>
            
-              
-            
-            <Route exact path="/Leftbar">
+              <Route exact path="/LeftSideBar">
               <div className="w-7%">
-                <LeftSideBar />
-              </div>
-            </Route>
+                <LeftSideBar/>
+                </div>
+                </Route>
+           
 
             <Route exact path="/Feeds">
               <div style={{ width: "60%", paddingTop: "30px" }}>
