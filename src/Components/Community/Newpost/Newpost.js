@@ -58,12 +58,11 @@ const Newpost = () => {
 
   return (
     <div
-      className="newpost w-screen md:w-full h-auto"
+      className="newpost w-screen md:w-full h-auto "
       style={{
-        marginTop: '18px',
         borderRadius: '8px'
       }}>
-      {/* <div className="block md:hidden">
+      <div className="block md:hidden px-16 pb-4">
         <Card className="Card">
           <div className="flex">
             <img src={myra} className="p-4" alt="img" />
@@ -80,7 +79,7 @@ const Newpost = () => {
             </Card.Text>
           </Card.Body>
         </Card>
-      </div> */}
+      </div>
 
       <div className="flex">
         <div className="py-8 px-8 w-5/6 md:w-11/12  mx-auto bg-white rounded-xl">
@@ -130,7 +129,7 @@ const Newpost = () => {
                   <span className="slider shadow-inner" />
                 </label>
               </div>
-              <div className="text-col pt-7 text-xl pl-4 text-lg font-normal md:pr-52 md:mr-44   text-gray-400">Post as anonymous</div>
+              <div className="text-col pt-7 text-xl pl-4 md:pl-2 font-normal md:pr-40 md:mr-44   text-gray-400">Post as anonymous</div>
               {/* <div className=" abcd img-col mb-32 pt-10 flex" style={{ paddingLeft: '420px' }}>
                 <img src={mes} />
               </div> */}
@@ -139,7 +138,7 @@ const Newpost = () => {
                     <img src={mes}/>
                   </button>
                 </div> */}
-                 {/* <div className='pt-4 ml-4'>
+                 {/* <div className='pt-7'>
                 <button className='ml-4'>
                   <img src={mes}/>
                 </button>
@@ -149,7 +148,10 @@ const Newpost = () => {
                
                
                 
-                <div className="ml-40 md:ml-16 md:pl-48  flex justify-end">
+                <div className="ml-44 md:ml-16 md:pl-48  flex justify-end">
+                <button className='pr-6'>
+                  <img src={mes}/>
+                </button>
                   <button className=" button group  focus:bg-pink-500  ..." style={{ width: '80px', height: '30px', borderRadius: '5px' }}>
                     <div className="text-gray-400">POST</div>
                   </button>

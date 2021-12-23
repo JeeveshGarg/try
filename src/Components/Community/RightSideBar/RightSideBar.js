@@ -39,14 +39,16 @@ const RightSideBar = () => {
       }}>
       <Card.Img variant="top" src={fly} style={{ height: '12rem',marginTop:'1rem' }} />
       <Card.Body>
-        <Button
+        <button
           style={{
             backgroundColor: '#EB0090',
             marginLeft: '6rem',
-            width: '12rem'
+            width: '12rem',height:'4rem',fontSize:'1.2rem',
+            borderRadius:'8px',
+            color:'white'
           }}>
           Video Date
-        </Button>
+        </button>
       </Card.Body>
     </Card>
   </div>
