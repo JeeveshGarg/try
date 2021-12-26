@@ -52,10 +52,10 @@ const Community = () => {
                 <Feeds feeds={feeds} />
               ))}
             </div> */}
-            <div className="w-65%">
+            {/* <div className="w-65%">
             <Feeds feeds={feeds} />
             </div>
-           
+            */}
             {/* <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full  ">
               <Newpost />
             </div> */}
@@ -64,9 +64,9 @@ const Community = () => {
               <Notification />
             </div> */}
 
-            {/* <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full mb-24">
+            <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full mb-24">
               <Profile />
-            </div> */}
+            </div>
 
             <div className="md:block hidden" style={{ width: '20%', height: '100%', paddingTop: '18px' }}>
               <RightSideBar />

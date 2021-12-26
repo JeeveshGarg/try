@@ -4,10 +4,13 @@ import profile from './profile.svg'
 import newthought from './newthought.svg'
 import notification from './notification.svg'
 import {Link} from 'react-router-dom'
+
 const LeftSideBar = () => {
   return (
     <div className="w-screen fixed bottom-0 md:relative z-10 pt-4 bg-gray-50 md:bg-transparent min-w-min md:w-full">
       <div className="m-auto justify-between flex md:flex-col px-28  md:px-2 ">
+
+        <Link to="/Newpost">
         <div className="md:my-2 ">
           <img src={newthought} alt="new" style={{ width: '48px', height: '50px' }}></img>
          
@@ -22,11 +25,10 @@ const LeftSideBar = () => {
             }}>
             New Thought
           </p>
-         
-         
         </div>
-
-        <div className="md:my-2 flex flex-col  ">
+        </Link>
+  <Link to="/Community">
+  <div className="md:my-2 flex flex-col  ">
           {/* <div className='flex md:flex-row '> */}
           {/* <div className='md:block hidden' style={{backgroundColor:'#FF0099',
         width:'4px',height:'60px'}}></div> */}
@@ -56,8 +58,11 @@ const LeftSideBar = () => {
           <div className='md:hidden block mb-2' style={{backgroundColor:'#FF0099',
         width:'60px',height:'4px'}}></div>
         </div>
+  </Link>
         
-
+        
+        <Link to="/Profile">
+       
         <div className="md:my-2">
           <img src={profile} alt="new" style={{ width: '48px', height: '50px' }}></img>
           <p className='md:ml-2 ml-4'
@@ -72,7 +77,7 @@ const LeftSideBar = () => {
             Profile
           </p>
         </div>
-
+        </Link>
        
       </div>
     </div>

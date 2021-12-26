@@ -24,6 +24,9 @@ import Community from'./Components/Community/Community';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Check from "./Components/Check";
 import HeaderNew from "./Components/HeaderNew";
+import Profile from "./Components/Community/Profile/Profile";
+import LeftSideBar from "./Components/Community/LeftSideBar/LeftSideBar";
+import Newpost from "./Components/Community/Newpost/Newpost";
 function App() {
   const [showSignUpModal, setShowSignUpModal] = useState(false);
   const [showSignInModal, setShowSignInModal] = useState(false);
@@ -134,8 +137,13 @@ function App() {
             </Route>
             <Route path="/Community">
               <Community/>
-              {/* <Date></Date> */}
-              {/* <Footer></Footer> */}
+            </Route>
+            <Route  exact path="/Profile">
+              <Profile/>
+              </Route>
+            <Route  exact path="/Profile">
+              <Newpost/>
+
             </Route>
             {/* Flowers route */}
             <Route path="/Flowers">

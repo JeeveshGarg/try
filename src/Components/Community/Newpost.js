@@ -52,13 +52,13 @@ const Community = () => {
                 <Feeds feeds={feeds} />
               ))}
             </div> */}
-            <div className="w-65%">
+            {/* <div className="w-65%">
             <Feeds feeds={feeds} />
-            </div>
-           
-            {/* <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full  ">
-              <Newpost />
             </div> */}
+           
+            <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full  ">
+              <Newpost />
+            </div>
 
     {/* <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full ">
               <Notification />
