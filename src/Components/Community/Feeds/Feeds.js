@@ -132,19 +132,27 @@ const Feeds = ({ feeds }) => {
         </div>
       </div>
 
-      <div className="block md:hidden">
-        <Card className="Card">
-          <div className="flex">
-            <img src={myra} className="p-4" alt="img" />
-            <div className="px-8 my-auto">Myra</div>
-            <div className="my-auto">@admin</div>
-          </div>
-          <Card.Body>
-            <Card.Title style={{ textDecoration: 'Underline' }}>Guidelines</Card.Title>
-            <Card.Text className="text-lg">Guidelines https://www.instagram.com/candid.connection/ https://www.instagram.com/candid.connection/</Card.Text>
-          </Card.Body>
-        </Card>
+      <div className="block md:hidden px-1 pb-4">
+    <Card className="Card">
+      <div className="flex">
+        <img src={myra} className="p-4" alt="img" />
+        <div className='pt-16'>
+        <div className="pl-2 my-auto">Myra</div>
+        <div className="my-auto pl-2">@admin</div>
+        </div>
+       
       </div>
+      <Card.Body>
+        <Card.Title style={{ textDecoration: "Underline" }}>
+          Guidelines
+        </Card.Title>
+        <Card.Text className="text-lg">
+          Guidelines https://www.instagram.com/candid.connection/
+          https://www.instagram.com/candid.connection/
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
       <div className="w-full" style={{}}>
         {feeds.map((feed) => (
           <Post

@@ -4,6 +4,8 @@ import like from './like.svg'
 import comment from './comment.svg'
 import Avatar from './Avatar.svg'
 import share from './share.svg'
+import send from './send.svg'
+import './Post.css'
 
 const Post = ({ tags, username, age, gender, location }) => {
   return (
@@ -14,7 +16,8 @@ const Post = ({ tags, username, age, gender, location }) => {
         margin: '2.5rem 0',
         borderRadius: '4px'
       }}>
-      <div className="container flex w-50 " style={{ border: 'solid #FEC6EB 1.5px', marginRight: '90rem', height: '2rem',marginLeft:'10px' }}>
+      <div className="container flex  pt-1 pb-1 " style={{ border: 'solid #FEC6EB 1.5px', marginRight: '90rem', height: '2.5rem',marginLeft:'10px',
+    width:'160px' }}>
         <div className="img-col">
           <img src={heart} style={{ height: '15px', paddingTop: '1px' }} />
         </div>
@@ -25,10 +28,10 @@ const Post = ({ tags, username, age, gender, location }) => {
       </div>
 
       <div className="container flex justify-start " style={{}}>
-        <div className="img-col w-16 my-auto ml-2 pt-2">
+        <div className="img-col w-16 my-auto ml-2 pt-4">
           <img src={Avatar} />
         </div>
-        <div className="text-col px-4 pt-2" style={{ paddingTop: '1rem' }}>
+        <div className="text-col px-4 pt-4" style={{ paddingTop: '1rem' }}>
           <div>
             <h4>{username}</h4>
           </div>
@@ -40,10 +43,10 @@ const Post = ({ tags, username, age, gender, location }) => {
         </div>
       </div>
 
-      <div className="md:h-auto md:w-auto" style={{ fontWeight: '400', paddingLeft: '10px', paddingTop: '5px' }}>
+      <div className="md:h-auto md:w-auto" style={{ fontWeight: '400', paddingLeft: '10px', paddingTop: '9px' }}>
         <h5>Really enjoyed the course. I felt like I was getting what you had advertised online and much more! Really enjoyed the course.</h5>
       </div>
-      <div className="flex justify-between items-center px-6" style={{ paddingTop: '10px' }}>
+      <div className="flex justify-between items-center px-6" style={{ paddingTop: '15px' }}>
 
         <div className="flex">
         <div className="flex">
@@ -58,15 +61,17 @@ const Post = ({ tags, username, age, gender, location }) => {
         </div>
           
            
-          <div  className="flex">
-          <img className="md:" src={share} style={{height:'2rem'}}/>
+          <div  className="flex  md:mr-4">
+          <img className="" src={share} style={{height:'2rem'}}/>
           <p className="mr-2 pr-1 pt-1"><h4>3</h4></p>
           </div>
            
          
         </div>
-    
-      <input className="my-2 h-10" placeholder="Type your comment here" style={{ border: 'solid #FEC6EB 2px', width: '95%', borderRadius: '4px' ,marginLeft:'10px'}} type="text" />
+       <div className='container'>
+      <input className="my-2 h-10 input" placeholder="Type your comment here" style={{ border: 'solid #FEC6EB 2px', width: '95%', borderRadius: '4px' ,marginLeft:'10px'}} type="text" />
+      <img src={send} className='image'/>
+      </div>
     </div>
   )
 }

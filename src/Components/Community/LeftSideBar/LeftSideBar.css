@@ -1,0 +1,17 @@
+.active{
+    color: black;
+    border-left: solid #FF0099 4px;
+    border-left-width: 4px;
+    padding-left: 15px;
+    line-height: 3px;
+     
+}
+    
+@media screen and (max-width:720px) {
+    .active {
+    border-bottom: solid #FF0099 4px ;
+    border-left: solid #fcf8f8 4px ;
+    margin-bottom: 5px;
+    border-left-width: 1px;
+    }
+  }

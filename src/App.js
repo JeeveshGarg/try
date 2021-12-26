@@ -24,9 +24,9 @@ import Community from'./Components/Community/Community';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Check from "./Components/Check";
 import HeaderNew from "./Components/HeaderNew";
-import Profile from "./Components/Community/Profile/Profile";
+import Profile from "./Components/Community/Profile";
 import LeftSideBar from "./Components/Community/LeftSideBar/LeftSideBar";
-import Newpost from "./Components/Community/Newpost/Newpost";
+import Newpost from "./Components/Community/Newpost";
 function App() {
   const [showSignUpModal, setShowSignUpModal] = useState(false);
   const [showSignInModal, setShowSignInModal] = useState(false);
