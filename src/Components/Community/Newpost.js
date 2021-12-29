@@ -56,7 +56,7 @@ const Community = () => {
             <Feeds feeds={feeds} />
             </div> */}
            
-            <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full  ">
+            <div className="max-w-2xl flex-grow md:max-w-7xl 2xl:max-w-full mb-24 ">
               <Newpost />
             </div>
 

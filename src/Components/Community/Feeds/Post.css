@@ -11,7 +11,7 @@
 .image {
     position:absolute;
     bottom:10px;
-    left:690px;
+    left: 690px;
     width: 15px;
     height:15px;
 }
@@ -20,7 +20,7 @@
     .image {
         position:absolute;
         bottom:10px;
-        left:370px;
+        left:360px;
         width: 15px;
         height:15px;
     }

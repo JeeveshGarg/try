@@ -16,8 +16,8 @@ const LeftSideBar = () => {
           style={{ textDecoration: "none", color: "#979797" }}
           activeClassName="active"
         >
-          <div className="md:my-2  ">
-            <img
+          <div className="md:my-2 md:py-2  ">
+            <img className="md:py1"
               src={newthought}
               alt="new"
               style={{ width: "48px", height: "50px" }}
@@ -41,8 +41,14 @@ const LeftSideBar = () => {
 
         <NavLink
           to="/Community"
-          style={{ textDecoration: "none", color: "#979797" }}
+          style={{ textDecoration: "none",}}
           activeClassName="active"
+
+          // style={isActive => ({
+          //   color: isActive ? "green" : "blue"
+          // })}
+
+        
         >
           <div className="md:my-2 flex flex-col  ">
             {/* <div className='flex md:flex-row '> */}
@@ -67,7 +73,7 @@ const LeftSideBar = () => {
                 size: "180px",
                 alignItems: "center",
                 width: "98px",
-                height: "16.41",
+                height: "16.41", color: "#979797" 
               }}
             >
               Community

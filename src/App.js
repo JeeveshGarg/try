@@ -141,7 +141,7 @@ function App() {
             <Route  exact path="/Profile">
               <Profile/>
               </Route>
-            <Route  exact path="/Profile">
+            <Route  exact path="/Newpost">
               <Newpost/>
 
             </Route>
