@@ -48,12 +48,14 @@ const Profile = () => {
     {
       value: 1,
       label: "LongDistance",
+      topic_follow: false,
+      class: "pt-8 hid",
       icons: (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="none"
         >
           <path
             fill-rule="evenodd"
@@ -65,6 +67,8 @@ const Profile = () => {
     {
       value: 2,
       label: "Confession",
+      topic_follow: false,
+      class: "w-30 mx-auto hid",
       icons: (
         <svg xmlns="heart.svg" width="16" height="16" fill="currentColor">
           <path
@@ -77,6 +81,8 @@ const Profile = () => {
     {
       value: 3,
       label: "DateIdeas",
+      topic_follow: false,
+      class: "text-col w-full flex text-xs md:text-xl",
       icons: (
         <svg xmlns="heart.svg" width="16" height="16" fill="currentColor">
           <path
@@ -89,6 +95,8 @@ const Profile = () => {
     {
       value: 4,
       label: "Misc",
+      topic_follow: false,
+      class: "pt-8 hid try",
       icons: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -218,100 +226,32 @@ const Profile = () => {
         </div>
         <div className="topics flex flex-col px-8">
           <div className="flex mx-auto justify-between">
-            <div className="pt-8 hid try" style={{ disply: "block" }}>
-              <div
-                className="container rounded-lg w-4/5 flex h-3/5"
-                style={{
-                  border: "solid #FEC6EB 2px",
-                }}
-              >
-                <div className="text-col w-full flex text-xs md:text-xl ">
-                  <img src={heart} className="my-auto h-2/3 mx-2" />
-                  <h6 className="my-auto px-2 font-4xl try ">LongDistance</h6>
-                </div>
-                <div className="flex md:mx-2">
-                  <img onClick={hide1} src={cancel} className="my-auto" />
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-8 hid" style={{ display: "block" }}>
-              <div
-                className="container rounded-lg w-4/5 flex h-3/5 "
-                style={{
-                  border: "solid #FEC6EB 2px",
-                }}
-              >
-                <div className="text-col w-full flex text-xs md:text-xl ">
-                  <img src={heart} className="my-auto h-2/3 mx-2" />
-                  <h6 className="my-auto px-2">Long Distance</h6>
-                </div>
-                <div className="flex md:mx-2">
-                  <img onClick={hide2} src={cancel} className="my-auto" />
-                </div>
-              </div>
-            </div>
+            {
+              option.filter((option) => option.topic_follow === true).map(
+                (option) => (
+                  <div className={ option.class } style={{ disply: "block" }}>
+                    <div
+                      className="container rounded-lg w-4/5 flex h-3/5"
+                      style={{
+                        border: "solid #FEC6EB 2px",
+                      }}
+                    >
+                      <div className="text-col w-full flex text-xs md:text-xl ">
+                        <img src={heart} className="my-auto h-2/3 mx-2" />
+                        <h6 className="my-auto px-2 font-4xl try ">{ option.label }</h6>
+                      </div>
+                      <div className="flex md:mx-2">
+                        {/* do check */}
+                     <img onClick={ `hide${option.value}` } src={cancel} className="my-auto" />
+                      </div>
+                    </div>
+                  </div>
+                )
+              )
+            }
+            
           </div>
-          <div className="w-30 mx-auto hid" style={{ display: "block" }}>
-            <div className="pt-0">
-              <div
-                className="container rounded-lg flex"
-                style={{
-                  border: "solid #FEC6EB 2px",
-                  height: "30px",
-                  width: "155px",
-                }}
-              >
-                <div className="text-col w-full flex text-xs md:text-xl ">
-                  <img src={heart} className="my-auto h-2/3 mx-2" />
-                  <h6 className="my-auto px-2">Long Distance</h6>
-                </div>
-                <div className="flex md:mx-2">
-                  <img onClick={hide3} src={cancel} className="my-auto" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex mx-auto justify-between">
-            <div className="pt-8 hid" style={{ display: "block" }}>
-              <div
-                className="container rounded-lg w-4/5 flex h-3/5"
-                style={{
-                  border: "solid #FEC6EB 2px",
-                }}
-              >
-                <div className="text-col w-full flex text-xs md:text-xl">
-                  <img src={heart} className="my-auto h-2/3 mx-2" />
-                  <h6 className="my-auto px-2">Long Distance</h6>
-                </div>
-                <div className="flex md:mx-2">
-                  <img onClick={hide4} src={cancel} className="my-auto" />
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 hid" style={{ display: "block" }}>
-              <div
-                className="container rounded-lg w-4/5 flex h-3/5"
-                style={{
-                  border: "solid #FEC6EB 2px",
-                }}
-              >
-                <div className="text-col w-full flex text-xs md:text-xl ">
-                  <img src={heart} className="my-auto h-2/3 mx-2" />
-                  <h6 className="my-auto px-2">Long Distance</h6>
-                </div>
-                <div
-                  className="flex md:mx-2"
-                  id="fortry"
-                  style={{ display: "block" }}
-                >
-                  <button>
-                    <img onClick={hide5} src={cancel} className="my-auto" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
 
         <div className="flex">
@@ -336,7 +276,9 @@ const Profile = () => {
 
               
 
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div onClick={()=> {
+                  e.topic_follow = true;
+                }} style={{ display: "flex", alignItems: "center" }}>
                   {e.icons}
                   <span style={{ marginLeft: 5 }}>{e.label}</span>
 
